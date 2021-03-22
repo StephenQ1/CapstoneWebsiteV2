@@ -9,12 +9,12 @@
 <html>
 <head>
     <div class="servicesNavBar">
-        <a href="Home">Home</a>
-        <a href="Services">Services</a>
-        <a href="About">About Us</a>
-        <a href="Contact">Contact Us</a>
-        <a href="Login">Login / Signup</a>
-        <a href="Help">Help</a>
+        <a href="index.jsp">Home</a>
+        <a href="services.jsp">Services</a>
+        <a href="about.jsp">About Us</a>
+        <a href="contact.jsp">Contact Us</a>
+        <a href="login.jsp">Login / Signup</a>
+        <a href="help.jsp">Help</a>
     </div>
 </head>
 <body>
