@@ -17,18 +17,26 @@
     background-color:black;
     position:absolute;
     top:435px;
-    left:475px;
+    left:340px;
+    border:solid;
+    border-width: 2px;
+    border-color: #f6ff5a;
 }
 .mainNavBar a{
     font-family: "Times New Roman";
+    padding:25px;
     color:#f6ff5a ;
 }
 #adBlurb{
     font-family: "Times New Roman";
     text-align:center;
     background-color:black;
+    padding: 5px;
     color: #f6ff5a ;
     position:absolute;
     top:625px;
     left:150px;
+    border: solid;
+    border-width: 1px;
+    border-color: #f6ff5a;
 }

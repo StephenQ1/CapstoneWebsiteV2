@@ -8,6 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <link rel="stylesheet" href="about.css"/>
     <div class="aboutNavBar">
         <a href="index.jsp">Home</a>
         <a href="services.jsp">Services</a>
