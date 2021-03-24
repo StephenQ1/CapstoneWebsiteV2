@@ -8,6 +8,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <img src="headerBackground.jpg" alt="HeaderB" id="HeaderB" style="width:1350px;height:505px;">
+    <img src="PRLogo.jpg" alt="Logo" id="Logo" style="width:275px;height:275px;">
+    <img src="bodyBackground.jpg" alt="BodyB" id="BodyB"style="width:1350px;height:768px;">
     <link rel="stylesheet" href="services.css"/>
     <div class="servicesNavBar">
         <a href="index.jsp">Home</a>
