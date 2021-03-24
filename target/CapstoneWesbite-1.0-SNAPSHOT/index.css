@@ -1,10 +1,16 @@
 #BodyB{
     position:absolute;
+    max-width: 100%;
+    max-height: 100vh;
     top:505px;
     left:0px;
+    margin:auto;
 }
 #HeaderB{
     position:absolute;
+    max-width: 100%;
+    max-height: 100vh;
+    margin:auto;
     top:0px;
     left:0px;
 }
