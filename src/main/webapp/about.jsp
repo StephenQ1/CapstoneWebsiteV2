@@ -10,7 +10,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="about.css"/>
-    <img src="headerBackground.jpg" alt="HeaderB" id="HeaderB" style="width:1350px;height:505px;">
+    <img src="headerBackground.jpg" alt="HeaderB" id="HeaderB" style="width:1920px;height:505px;">
     <img src="PRLogo.jpg" alt="Logo" id="Logo" style="width:275px;height:275px;">
     <div class="aboutNavBar">
         <a href="index.jsp">Home</a>
@@ -22,7 +22,7 @@
     </div>
 </head>
 <body>
-<img src="aboutBackground.jpg" alt="BodyB" id="BodyB"style="width:1350px;height:768px;">
+<img src="aboutBackground.jpg" alt="BodyB" id="BodyB"style="width:1920px;height:768px;">
 <h2 id="aboutBlurb">Meet the Team!</h2>
 
 <h3 id="member1">Joseph Crane</h3>

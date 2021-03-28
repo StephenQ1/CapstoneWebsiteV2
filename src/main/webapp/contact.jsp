@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <img src="headerBackground.jpg" alt="HeaderB" id="HeaderB" style="width:1350px;height:505px;">
+    <img src="headerBackground.jpg" alt="HeaderB" id="HeaderB" style="width:1920px;height:505px;">
     <img src="PRLogo.jpg" alt="Logo" id="Logo" style="width:275px;height:275px;">
     <link rel="stylesheet" href="contact.css"/>
     <div class="contactNavBar">
@@ -22,7 +22,7 @@
     </div>
 </head>
 <body>
-<img src="contactBackground.jpg" alt="BodyB" id="BodyB"style="width:1350px;height:768px;">
+<img src="contactBackground.jpg" alt="BodyB" id="BodyB"style="width:1920px;height:768px;">
 <p><h1 id="contactBlurb">Contact us using the information below and inquire about our rates!</h1></p>
 </body>
 </html>

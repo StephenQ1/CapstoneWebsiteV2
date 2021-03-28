@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <img src="headerBackground.jpg" alt="HeaderB" id="HeaderB" style="width:1350px;height:505px;">
+    <img src="headerBackground.jpg" alt="HeaderB" id="HeaderB" style="width:1920px;height:505px;">
     <img src="PRLogo.jpg" alt="Logo" id="Logo" style="width:275px;height:275px;">
     <link rel="stylesheet" href="services.css"/>
     <div class="servicesNavBar">
@@ -22,7 +22,7 @@
     </div>
 </head>
 <body>
-<img src="servicesBackground.jpg" alt="BodyB" id="BodyB"style="width:1350px;height:768px;">
+<img src="servicesBackground.jpg" alt="BodyB" id="BodyB"style="width:1920px;height:768px;">
 <p><h1 id="serviceBlurb">What we offer.</h1></p>
 </body>
 </html>
