@@ -1,6 +1,6 @@
 #BodyB{
     position:absolute;
-    width:auto;
+    width: available;
     height:auto;
     max-width: 100%;
     max-height: 100vh;
@@ -10,7 +10,7 @@
 }
 #HeaderB{
     position:absolute;
-    width:auto;
+    width: available;
     height: auto;
     max-width: 100%;
     max-height: 100vh;
@@ -37,4 +37,17 @@
     text-decoration: none;
     padding:25px;
     color:#f6ff5a ;
+}
+#helpBlurb{
+    font-family: "Times New Roman";
+    text-align:center;
+    background-color:white;
+    padding: 5px;
+    color: black ;
+    position:absolute;
+    top:625px;
+    left:150px;
+    border: solid;
+    border-width: 1px;
+    border-color: #f6ff5a;
 }

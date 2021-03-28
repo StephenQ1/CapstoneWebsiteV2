@@ -6,11 +6,11 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
 <html>
 <head>
     <img src="headerBackground.jpg" alt="HeaderB" id="HeaderB" style="width:1350px;height:505px;">
     <img src="PRLogo.jpg" alt="Logo" id="Logo" style="width:275px;height:275px;">
-    <img src="bodyBackground.jpg" alt="BodyB" id="BodyB"style="width:1350px;height:768px;">
     <link rel="stylesheet" href="contact.css"/>
     <div class="contactNavBar">
         <a href="index.jsp">Home</a>
@@ -22,6 +22,7 @@
     </div>
 </head>
 <body>
-
+<img src="contactBackground.jpg" alt="BodyB" id="BodyB"style="width:1350px;height:768px;">
+<p><h1 id="contactBlurb">Contact us using the information below and inquire about our rates!</h1></p>
 </body>
 </html>

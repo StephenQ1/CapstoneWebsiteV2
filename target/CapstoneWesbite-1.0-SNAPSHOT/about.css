@@ -1,6 +1,6 @@
 #BodyB{
     position:absolute;
-    width:auto;
+    width: available;
     height:auto;
     max-width: 100%;
     max-height: 100vh;
@@ -10,7 +10,7 @@
 }
 #HeaderB{
     position:absolute;
-    width:auto;
+    width: available;
     height: auto;
     max-width: 100%;
     max-height: 100vh;
@@ -20,7 +20,7 @@
 }
 #Logo{
     position:absolute;
-    top:150px;
+    top:125px;
     left:525px;
 }
 .aboutNavBar{
@@ -37,4 +37,50 @@
     text-decoration: none;
     padding:25px;
     color:#f6ff5a ;
+}
+#aboutBlurb{
+    font-family: "Times New Roman";
+    text-align:center;
+    background-color:black;
+    padding: 5px;
+    color: black ;
+    position:absolute;
+    top:525px;
+    left:200px;
+}
+
+
+#member1{
+}
+#title1{
+    float: right;
+}
+#Joe{
+    float: right;
+}
+#description1{
+}
+
+
+#member2{
+}
+#title2{
+    float: right;
+}
+#Moh{
+    float: right;
+}
+#description2{
+}
+
+
+#member3{
+}
+#title3{
+    float: right;
+}
+#Stephen{
+    float: right;
+}
+#description3{
 }
