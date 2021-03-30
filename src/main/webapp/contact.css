@@ -21,13 +21,13 @@
 #Logo{
     position:absolute;
     top:150px;
-    left:525px;
+    left:45%;
 }
 .contactNavBar{
     background-color:black;
     position:absolute;
     top:435px;
-    left:340px;
+    left:30%;
     border:solid;
     border-width: 2px;
     border-color: #f6ff5a;
@@ -41,13 +41,79 @@
 #contactBlurb{
     font-family: "Times New Roman";
     text-align:center;
-    background-color:white;
-    padding: 5px;
+    background-color:black;
+    padding: 10px;
     color: #f6ff5a;
     position:absolute;
     top:625px;
-    left:150px;
+    left:22%;
     border: solid;
     border-width: 1px;
     border-color: #f6ff5a;
+}
+#contactDiv{
+    background-color: white;
+    color: black;
+    font-size: medium;
+    padding: 10px;
+    position: absolute;
+    width: 300px;
+    height: 225px;
+    top:750px;
+    left:60%;
+    border: solid;
+    border-width: 1px;
+    border-color: black;
+}
+#contactPic{
+    position: absolute;
+    left: 35%;
+    width: 50px;
+    height: 50px;
+}
+#contactTitle{
+    position: absolute;
+    top: 38%;
+    left: 30%;
+}
+#contactDescription{
+    padding: 10px;
+    position: absolute;
+    left: 0%;
+    top: 60%;
+    float: bottom;
+}
+
+
+#salesDiv{
+    background-color: white;
+    color: black;
+    font-size: medium;
+    padding: 10px;
+    position: absolute;
+    width: 300px;
+    height: 225px;
+    top:750px;
+    left:30%;
+    border: solid;
+    border-width: 1px;
+    border-color: black;
+}
+#salesPic{
+    position: absolute;
+    left: 30%;
+    width: 50px;
+    height: 50px;
+}
+#salesTitle{
+    position: absolute;
+    top: 38%;
+    left: 30%;
+}
+#salesDescription{
+    padding: 10px;
+    position: absolute;
+    left: 0%;
+    top: 60%;
+    float:bottom;
 }

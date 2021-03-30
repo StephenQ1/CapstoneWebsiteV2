@@ -21,13 +21,13 @@
 #Logo{
     position:absolute;
     top:150px;
-    left:525px;
+    left:45%;
 }
 .loginNavBar{
     background-color:black;
     position:absolute;
     top:435px;
-    left:340px;
+    left:30%;
     border:solid;
     border-width: 2px;
     border-color: #f6ff5a;

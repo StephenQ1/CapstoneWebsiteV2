@@ -21,13 +21,13 @@
 #Logo{
     position:absolute;
     top:150px;
-    left:525px;
+    left:45%;
 }
 .helpNavBar{
     background-color:black;
     position:absolute;
     top:435px;
-    left:340px;
+    left:30%;
     border:solid;
     border-width: 2px;
     border-color: #f6ff5a;
@@ -41,9 +41,9 @@
 #helpBlurb{
     font-family: "Times New Roman";
     text-align:center;
-    background-color:white;
-    padding: 5px;
-    color: black ;
+    background-color:black;
+    padding: 10px;
+    color: #f6ff5a;
     position:absolute;
     top:625px;
     left:150px;
