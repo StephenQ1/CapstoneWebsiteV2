@@ -20,14 +20,14 @@
 }
 #Logo{
     position:absolute;
-    top:125px;
-    left:525px;
+    top:150px;
+    left:45%;
 }
 .aboutNavBar{
     background-color:black;
     position:absolute;
     top:435px;
-    left:340px;
+    left:30%;
     border:solid;
     border-width: 2px;
     border-color: #f6ff5a;
@@ -43,44 +43,93 @@
     text-align:center;
     background-color:black;
     padding: 5px;
-    color: black ;
+    color: #f6ff5a;
     position:absolute;
     top:525px;
-    left:200px;
+    left:45%;
+    border: solid;
+    border-width: 1px;
+    border-color: #f6ff5a;
 }
 
-
+#JoeDiv{
+    padding:10px;
+    background-color:black;
+    color: #f6ff5a;
+    position:absolute;
+    top:600px;
+    left:5%;
+    height:300px;
+    width:30%;
+    border: solid;
+    border-width: 1px;
+    border-color: #f6ff5a;
+}
 #member1{
+
 }
 #title1{
-    float: right;
+    font-size: medium;
+    font-style: italic;
 }
 #Joe{
     float: right;
 }
 #description1{
+    float: bottom;
 }
 
 
+#MohDiv{
+    padding:10px;
+    background-color:black;
+    color: #f6ff5a;
+    position:absolute;
+    top:600px;
+    left:40%;
+    width:30%;
+    height:300px;
+    border: solid;
+    border-width: 1px;
+    border-color: #f6ff5a;
+}
 #member2{
 }
 #title2{
-    float: right;
+    font-size: medium;
+    font-style: italic;
 }
 #Moh{
     float: right;
 }
 #description2{
+    float: bottom;
 }
 
 
+#StephenDiv{
+    padding:10px;
+    background-color:black;
+    color: #f6ff5a;
+    position:absolute;
+    top:600px;
+    left:75%;
+    height:300px;
+    width:30%;
+    border: solid;
+    border-width: 1px;
+    border-color: #f6ff5a;
+}
 #member3{
 }
 #title3{
-    float: right;
+    font-size: medium;
+    font-style: italic;
 }
 #Stephen{
     float: right;
+    padding:5px;
 }
 #description3{
+    float: bottom;
 }

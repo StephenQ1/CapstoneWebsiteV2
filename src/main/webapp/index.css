@@ -21,13 +21,13 @@
 #Logo{
     position:absolute;
     top:150px;
-    left:525px;
+    left:45%;
 }
 .mainNavBar{
     background-color:black;
     position:absolute;
     top:435px;
-    left:340px;
+    left:30%;
     border:solid;
     border-width: 2px;
     border-color: #f6ff5a;
@@ -43,10 +43,10 @@
     text-align:center;
     background-color:black;
     padding: 5px;
-    color: #f6ff5a ;
+    color: #f6ff5a;
     position:absolute;
     top:625px;
-    left:150px;
+    left:25%;
     border: solid;
     border-width: 1px;
     border-color: #f6ff5a;
