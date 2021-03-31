@@ -42,7 +42,7 @@
 #serviceBlurb{
     font-family: "Times New Roman";
     text-align:center;
-    background-color:white;
+    background-color: black;
     padding: 5px;
     color: #f6ff5a;
     position:absolute;
@@ -51,4 +51,68 @@
     border: solid;
     border-width: 1px;
     border-color: #f6ff5a;
+}
+#service1{
+    padding: 10px;
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+    position: absolute;
+    top: 750px;
+    left:5%;
+    height: 200px;
+    width: 150px;
+}
+#growText{
+    position: absolute;
+    top: 150px;
+    left:50px;
+}
+#service2{
+    padding: 10px;
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+    position: absolute;
+    top: 750px;
+    left:30%;
+    height: 200px;
+    width: 150px;
+}
+#consultText{
+    position: absolute;
+    top: 150px;
+    left:50px;
+}
+#service3{
+    padding: 10px;
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+    position: absolute;
+    top: 750px;
+    left:55%;
+    height: 200px;
+    width: 150px;
+}
+#developText{
+    position: absolute;
+    top: 150px;
+    left:50px;
+}
+#service4{
+    padding: 10px;
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+    position: absolute;
+    top: 750px;
+    left:80%;
+    height: 200px;
+    width: 150px;
+}
+#designText{
+    position: absolute;
+    top: 150px;
+    left:55px;
 }

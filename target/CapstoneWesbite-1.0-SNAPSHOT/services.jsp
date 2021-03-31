@@ -24,5 +24,25 @@
 <body>
 <img src="servicesBackground.jpg" alt="BodyB" id="BodyB"style="width:1920px;height:768px;">
 <p><h1 id="serviceBlurb">What we offer.</h1></p>
+<div id="service1">
+    <img src="quote.jpg" alt="Logo" id="quoteService" style="width:150px;height:150px;">
+    <h3 id="growText">Grow</h3>
+    <p></p>
+</div>
+<div id="service2">
+    <img src="phone.jpg" alt="Logo" id="phoneService" style="width:150px;height:150px;">
+    <h3 id="consultText">Consult</h3>
+    <p></p>
+</div>
+<div id="service3">
+    <img src="computer.jpg" alt="Logo" id="computerService" style="width:150px;height:150px;">
+    <h3 id="developText">Develop</h3>
+    <p></p>
+</div>
+<div id="service4">
+    <img src="website.jpg" alt="Logo" id="websiteService" style="width:150px;height:150px;">
+    <h3 id="designText">Design</h3>
+    <p></p>
+</div>
 </body>
 </html>
