@@ -38,16 +38,39 @@
     padding:25px ;
     color:#f6ff5a ;
 }
-#adBlurb{
+#homeDiv{
     font-family: "Times New Roman";
-    text-align:center;
-    background-color:black;
-    padding: 5px;
-    color: #f6ff5a;
+    padding: 10px;
     position:absolute;
-    top:625px;
-    left:25%;
-    border: solid;
-    border-width: 1px;
-    border-color: #f6ff5a;
+    top:550px;
+    width: 900px;
+    left:20%;
 }
+#homeTitle{
+
+    color:black ;
+ text-align: center;
+    font-weight: bold;
+    font-size: xxx-large;
+}
+#blurbDiv{
+    font-size: x-large;
+    padding: 10px;
+    background-color:white;
+    color: black;
+    text-align: left;
+    border-color: black;
+    border-style: solid;
+}
+#homeBlurb1{
+    margin: 0;
+    text-indent: 2em;
+}
+#homeBlurb2{
+     margin: 0;
+     text-indent: 2em;
+ }
+#homeBlurb3{
+      margin: 0;
+      text-indent: 2em;
+  }

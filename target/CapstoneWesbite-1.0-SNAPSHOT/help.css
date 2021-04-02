@@ -51,3 +51,51 @@
     border-width: 1px;
     border-color: #f6ff5a;
 }
+#infoDiv{
+    position: absolute;
+    top: 800px;
+    left: 40%;
+    height: 325px;
+    width: 300px;
+    background-color: black;
+    border-style: solid;
+    border-color: #f6ff5a;
+    padding: 10px;
+
+}
+#helpInfo{
+    color: #f6ff5a;
+    position: absolute;
+    top: 0%;
+    left: 17%;
+}
+#supportInfo{
+    color: #f6ff5a;
+    position: absolute;
+    top: 10%;
+}
+#supportInfoDescription{
+    color: #f6ff5a;
+    position: absolute;
+    top:20%
+}
+#salesInfo{
+    color: #f6ff5a;
+    position: absolute;
+    top: 40%;
+}
+#salesInfoDescription{
+    color: #f6ff5a;
+    position: absolute;
+    top:50%
+}
+#headquartersInfo{
+    color: #f6ff5a;
+    position: absolute;
+    top: 70%;
+}
+#headquartersInfoDescription{
+    color: #f6ff5a;
+    position: absolute;
+    top:80%
+}

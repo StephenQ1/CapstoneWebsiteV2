@@ -23,26 +23,52 @@
 </head>
 <body>
 <img src="servicesBackground.jpg" alt="BodyB" id="BodyB"style="width:1920px;height:768px;">
-<p><h1 id="serviceBlurb">What we offer.</h1></p>
+<div id="servicesPage">
+<h1 id="serviceBlurb">What we offer.</h1>
+<p id="serviceDescription">From design to execution, out expert combination of forward thinking,
+    resourceful advice, skilled development  and advanced design give our customers the edge
+    on their competition.
+</p>
+</div>
 <div id="service1">
-    <img src="quote.jpg" alt="Logo" id="quoteService" style="width:150px;height:150px;">
+    <img src="quote.jpg" alt="Logo" id="growService" style="width:150px;height:150px;">
     <h3 id="growText">Grow</h3>
-    <p></p>
+    <p id="growDescription">
+        Marketing Ideas<br>
+        Advertising Optimization<br>
+        Competitive Prices<br>
+        Sales Advice
+    </p>
 </div>
 <div id="service2">
-    <img src="phone.jpg" alt="Logo" id="phoneService" style="width:150px;height:150px;">
+    <img src="phone.jpg" alt="Logo" id="consultService" style="width:150px;height:150px;">
     <h3 id="consultText">Consult</h3>
-    <p></p>
+    <p id="consultDescription">
+        Design Strategies<br>
+        Innovative Approaches<br>
+        Technology Architecture<br>
+        Forward-Thinking Solutions
+    </p>
 </div>
 <div id="service3">
-    <img src="computer.jpg" alt="Logo" id="computerService" style="width:150px;height:150px;">
+    <img src="computer.jpg" alt="Logo" id="developService" style="width:150px;height:150px;">
     <h3 id="developText">Develop</h3>
-    <p></p>
+    <p id="developDescription">
+        Web Applications<br>
+        Mobile Applications<br>
+        System Development<br>
+        Website Development
+    </p>
 </div>
 <div id="service4">
-    <img src="website.jpg" alt="Logo" id="websiteService" style="width:150px;height:150px;">
+    <img src="website.jpg" alt="Logo" id="designService" style="width:150px;height:150px;">
     <h3 id="designText">Design</h3>
-    <p></p>
+    <p id="designDescription">
+        Brand Identity Design<br>
+        UI/UX Design<br>
+        Company System Design<br>
+        Graphic Design
+    </p>
 </div>
 </body>
 </html>

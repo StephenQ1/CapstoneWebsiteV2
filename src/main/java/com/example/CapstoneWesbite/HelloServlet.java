@@ -1,6 +1,6 @@
 package com.example.CapstoneWesbite;
 
-import java.io.*; java io imported
+import java.io.*;
 
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
@@ -10,13 +10,13 @@ public class HelloServlet extends HttpServlet {
     private String message;
 
     public void init() {
-        message = "Hello World!";
+        message = "SMJ Interactive!";
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setContentType("text/html");
 
-        // Hello world! 
+        // Hello
         PrintWriter out = response.getWriter();
         out.println("<html><body>");
         out.println("<h1>" + message + "</h1>");
