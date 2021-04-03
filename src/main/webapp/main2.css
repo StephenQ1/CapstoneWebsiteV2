@@ -152,6 +152,14 @@
 #stephenProfile {
 }
 
+#hoursTable{
+    color: white;
+}
+#hoursTitle{
+    width: 100%;
+    text-align: center;
+    color: white;
+}
 .row {
     margin: auto;
     text-align:center;
