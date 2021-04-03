@@ -6,7 +6,7 @@
     <%@include file='header.jsp'%>
 
 <body>
-    <img src="Photos/bodyBackground.jpg" alt="BodyB" id="BodyB" style="width:1920px;height:768px;">
+    <img src="../Photos/bodyBackground.jpg" alt="BodyB" id="BodyB" style="width:1920px;height:768px;">
 
     <div id="homeDiv">
         <h3 id="homeTitle"> Let us Innovate you!</h3>

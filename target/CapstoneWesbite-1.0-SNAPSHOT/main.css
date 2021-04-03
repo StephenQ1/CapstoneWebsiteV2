@@ -1,0 +1,442 @@
+
+
+#BodyB
+{
+    height:auto;
+    left:0;
+    margin:auto;
+    position:absolute;
+    top:505px;
+    width:available;
+}
+
+#HeaderB
+{
+    height:auto;
+    left:0;
+    margin:auto;
+    position:absolute;
+    top:0;
+    width:max-content;
+}
+
+#JoeDiv
+{
+    background-color:#000;
+    border:solid;
+    border-color:#f6ff5a;
+    border-width:1px;
+    color:#f6ff5a;
+    height:300px;
+    left:5%;
+    padding:10px;
+    position:absolute;
+    top:600px;
+    width:30%;
+}
+
+#Logo
+{
+    left:45%;
+    position:absolute;
+    top:150px;
+}
+
+#MohDiv
+{
+    background-color:#000;
+    border:solid;
+    border-color:#f6ff5a;
+    border-width:1px;
+    color:#f6ff5a;
+    height:300px;
+    left:40%;
+    padding:10px;
+    position:absolute;
+    top:600px;
+    width:30%;
+}
+
+#StephenDiv
+{
+    background-color:#000;
+    border:solid;
+    border-color:#f6ff5a;
+    border-width:1px;
+    color:#f6ff5a;
+    height:300px;
+    left:75%;
+    padding:10px;
+    position:absolute;
+    top:600px;
+    width:30%;
+}
+
+#Stephen
+{
+    float:right;
+    padding:5px;
+}
+
+#aboutBlurb
+{
+    background-color:#000;
+    border:solid;
+    border-color:#f6ff5a;
+    border-width:1px;
+    color:#f6ff5a;
+    font-family:\"Times New Roman\";
+    left:45%;
+    padding:5px;
+    position:absolute;
+    text-align:center;
+    top:525px;
+}
+
+#blurbDiv
+{
+    background-color:#FFF;
+    border-color:#000;
+    border-style:solid;
+    color:#000;
+    font-size:x-large;
+    padding:10px;
+    text-align:left;
+}
+
+#contactBlurb
+{
+    background-color:#000;
+    border:solid;
+    border-color:#f6ff5a;
+    border-width:1px;
+    color:#f6ff5a;
+    font-family:\"Times New Roman\";
+    left:22%;
+    padding:10px;
+    position:absolute;
+    text-align:center;
+    top:625px;
+}
+
+#contactButton
+{
+    height:35px;
+    left:35%;
+    padding:5px;
+    position:absolute;
+    top:80%;
+    width:100px;
+}
+
+#contactDiv
+{
+    background-color:#FFF;
+    border:solid;
+    border-color:#000;
+    border-width:1px;
+    color:#000;
+    font-size:medium;
+    height:250px;
+    left:60%;
+    padding:10px;
+    position:absolute;
+    top:750px;
+    width:300px;
+}
+
+#contactTitle
+{
+    left:30%;
+    position:absolute;
+    top:38%;
+}
+
+#designText
+{
+    left:85px;
+    position:absolute;
+    top:140px;
+}
+
+#headquartersInfoDescription
+{
+    color:#f6ff5a;
+    position:absolute;
+    top:80%;
+}
+
+#headquartersInfo
+{
+    color:#f6ff5a;
+    position:absolute;
+    top:70%;
+}
+
+#helpBlurb
+{
+    background-color:#000;
+    border:solid;
+    border-color:#f6ff5a;
+    border-width:1px;
+    color:#f6ff5a;
+    font-family:\"Times New Roman\";
+    left:150px;
+    padding:10px;
+    position:absolute;
+    text-align:center;
+    top:625px;
+}
+
+#helpInfo
+{
+    color:#f6ff5a;
+    left:17%;
+    position:absolute;
+    top:0;
+}
+
+#homeDiv
+{
+    font-family:\"Times New Roman\";
+    left:20%;
+    padding:10px;
+    position:absolute;
+    top:550px;
+    width:900px;
+}
+
+#homeTitle
+{
+    color:#000;
+    font-size:xxx-large;
+    font-weight:700;
+    text-align:center;
+}
+
+#infoDiv
+{
+    background-color:#000;
+    border-color:#f6ff5a;
+    border-style:solid;
+    height:325px;
+    left:40%;
+    padding:10px;
+    position:absolute;
+    top:800px;
+    width:300px;
+}
+
+#salesButton
+{
+    height:35px;
+    left:32%;
+    padding:5px;
+    position:absolute;
+    top:80%;
+    width:125px;
+}
+
+#salesDiv
+{
+    background-color:#FFF;
+    border:solid;
+    border-color:#000;
+    border-width:1px;
+    color:#000;
+    font-size:medium;
+    height:250px;
+    left:30%;
+    padding:10px;
+    position:absolute;
+    top:750px;
+    width:300px;
+}
+
+#salesInfoDescription
+{
+    color:#f6ff5a;
+    position:absolute;
+    top:50%;
+}
+
+#salesInfo
+{
+    color:#f6ff5a;
+    position:absolute;
+    top:40%;
+}
+
+#salesTitle
+{
+    left:35%;
+    position:absolute;
+    top:38%;
+}
+
+#service1
+{
+    background-color:#FFF;
+    height:200px;
+    left:5%;
+    padding:10px;
+    position:absolute;
+    top:750px;
+    width:200px;
+}
+
+#service2
+{
+    background-color:#FFF;
+    height:200px;
+    left:30%;
+    padding:10px;
+    position:absolute;
+    top:750px;
+    width:200px;
+}
+
+#service3
+{
+    background-color:#FFF;
+    height:200px;
+    left:55%;
+    padding:10px;
+    position:absolute;
+    top:750px;
+    width:200px;
+}
+
+#service4
+{
+    background-color:#FFF;
+    height:200px;
+    left:80%;
+    padding:10px;
+    position:absolute;
+    top:750px;
+    width:200px;
+}
+
+#servicesPage
+{
+    background-color:#000;
+    border:solid;
+    border-color:#f6ff5a;
+    border-width:1px;
+    color:#f6ff5a;
+    font-family:\"Times New Roman\";
+    left:30%;
+    padding:5px;
+    position:absolute;
+    text-align:center;
+    top:550px;
+    width:550px;
+}
+
+#supportInfoDescription
+{
+    color:#f6ff5a;
+    position:absolute;
+    top:20%;
+}
+
+#supportInfo
+{
+    color:#f6ff5a;
+    position:absolute;
+    top:10%;
+}
+
+.aboutNavBar a,.contactNavBar a,.helpNavBar a,.mainNavBar a,.servicesNavBar a
+{
+    color:#f6ff5a;
+    font-family:\"Times New Roman\";
+    padding:25px;
+    text-decoration:none;
+}
+
+.aboutNavBar,.contactNavBar,.helpNavBar,.mainNavBar,.servicesNavBar
+{
+    background-color:#000;
+    border:solid;
+    border-color:#f6ff5a;
+    border-width:2px;
+    left:30%;
+    position:absolute;
+    top:435px;
+}
+
+#Joe,#Moh
+{
+    float:right;
+}
+
+#consultDescription,#designDescription,#developDescription,#growDescription
+{
+    background-color:#000;
+    color:#f6ff5a;
+    left:0;
+    padding:10px;
+    position:absolute;
+    text-align:center;
+    top:175px;
+    width:200px;
+}
+
+#consultService,#designService,#developService,#growService
+{
+    border-color:#000;
+    border-style:solid;
+    left:15%;
+    position:absolute;
+    top:0;
+}
+
+#consultText,#developText,#growText
+{
+    left:80px;
+    position:absolute;
+    top:140px;
+}
+
+#contactDescription,#salesDescription
+{
+    float:bottom;
+    left:0;
+    padding:10px;
+    position:absolute;
+    top:50%;
+}
+
+#contactLink,#salesLink
+{
+    color:#000;
+    font-weight:700;
+    text-decoration:none;
+}
+
+#contactPic,#salesPic
+{
+    height:50px;
+    left:35%;
+    position:absolute;
+    width:50px;
+}
+
+#description1,#description2,#description3
+{
+    float:bottom;
+}
+
+#homeBlurb1,#homeBlurb2,#homeBlurb3
+{
+    margin:0;
+    text-indent:2em;
+}
+
+#title1,#title2,#title3
+{
+    font-size:medium;
+    font-style:italic;
+}

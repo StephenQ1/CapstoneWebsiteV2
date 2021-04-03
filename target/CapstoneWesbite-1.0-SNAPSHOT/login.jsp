@@ -1,27 +1,32 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Owner
-  Date: 2021-03-22
-  Time: 3:34 p.m.
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
-<head>
-    <img src="headerBackground.jpg" alt="HeaderB" id="HeaderB" style="width:1920px;height:505px;">
-    <img src="PRLogo.jpg" alt="Logo" id="Logo" style="width:275px;height:275px;">
-    <link rel="stylesheet" href="login.css"/>
-    <div class="loginNavBar">
-        <a href="index.jsp">Home</a>
-        <a href="services.jsp">Services</a>
-        <a href="about.jsp">About Us</a>
-        <a href="contact.jsp">Contact Us</a>
-        <a href="login.jsp">Login / Signup</a>
-        <a href="help.jsp">Help</a>
+<title>SMJ - Log-in / Sign-up</title>
+<%@include file='head2.jsp'%>
+<%@include file='header2.jsp'%>
+
+<body id="wrapbot" class="backgroundImages" style="background-image: url('Photos/aboutBackground.jpg');">
+    <div class="pageContent">
+        <div class="contentContainer">
+            <div id="quoteForm">
+                <form method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
+
+                    <p>
+                        <label>E-mail Address
+                            <input type="text" name="email" required>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label>Password
+                            <input type="text" name="password" required>
+                        </label>
+                    </p>
+
+                    <p><button>Log In</button></p>
+                </form>
+            </div>
+        </div>
     </div>
-</head>
-<body>
-<img src="bodyBackground.jpg" alt="BodyB" id="BodyB"style="width:1920px;height:768px;">
 </body>
 </html>
