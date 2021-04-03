@@ -32,7 +32,7 @@
 }
 
 #headerContent a {
-    color:#f6ff5a;
+    color:white;
     font-family:\"Times New Roman\";
     padding-left: 0.7em;
     padding-right: 0.7em;
@@ -40,9 +40,9 @@
 }
 
 #navBar {
-    background-color:#000;
+    background-color:#181A1B;
     border:solid;
-    border-color:#f6ff5a;
+    border-color:white;
     border-width:2px;
     font-weight: bold;
     padding: 0.5em;
@@ -66,10 +66,10 @@
 
 #homeBlurb
 {
-    background-color:#FFF;
+    background-color:#181A1B;
     border-color:#000;
     border-style:solid;
-    color:#000;
+    color:white;
     font-size:x-large;
     padding:1em;
     text-align:left;
@@ -79,11 +79,11 @@
 #servicesBlurb {
     margin: auto;
     margin-bottom: 2em;
-    background-color:#000;
+    background-color:#181A1B;
     border:solid;
-    border-color:#f6ff5a;
+    border-color:white;
     border-width:1px;
-    color:#f6ff5a;
+    color:white;
     font-family:\"Times New Roman\";
     padding:5px;
     text-align:center;
@@ -91,14 +91,33 @@
     border-radius: 25px;
 }
 
+#consultDescription{
+    color: white;
+}
+#developDescription{
+    color: white;
+}
+#designDescription{
+    color: white;
+}
+#growDescription{
+    color: white;
+}
+#contactDescription{
+    color: white;
+}
+#salesDescription{
+    color: white;
+}
+
 #quoteForm {
     margin: auto;
     margin-bottom: 2em;
-    background-color:#000;
+    background-color:#181A1B;
     border:solid;
-    border-color:#f6ff5a;
+    border-color:white;
     border-width:1px;
-    color:#f6ff5a;
+    color:white;
     font-family:\"Times New Roman\";
     padding:5px;
     text-align:center;
@@ -111,6 +130,8 @@
 }
 
 .profileBlurb {
+    color: white;
+    background-color: #181A1B;
     font-size: large;
     min-width: 30%;
 }
@@ -121,15 +142,14 @@
 }
 
 #joeProfile {
-
+    background-color: #181A1B;
 }
 
 #mohammadProfile {
-
+    background-color: #181A1B;
 }
 
 #stephenProfile {
-
 }
 
 .row {
@@ -141,12 +161,12 @@
 
 .column {
     display: table-cell;
-    background-color: #FFF;
+    background-color: #181A1B;
     padding: 0.7em;
     max-width: 75em;
     height: auto;
     border:solid;
-    border-color:#f6ff5a;
+    border-color:white;
     border-width:1px;
     border-radius: 25px;
 }
@@ -160,27 +180,32 @@ h1, h2, h3, h4 {
 }
 
 h1 {
+    color: white;
     font-size:xxx-large;
 }
 
 h2 {
+    color: white;
     font-size:xx-large;
 }
 
 h3 {
+    color: white;
     font-size:x-large;
 }
 
 h4 {
+    color: white;
     font-size:large;
 }
 
 h5 {
+    color: white;
     font-size:x-large;
 }
 
 footer {
-    color:#f6ff5a;
+    color:white;
     font-size:small;
     text-align: center;
 }
