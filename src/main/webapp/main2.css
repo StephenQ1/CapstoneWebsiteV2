@@ -24,7 +24,7 @@
     position: absolute;
     background-position: top;
 
-    /*background-color: rgba(0,0,0,0.55); !* Tint color *!*/
+    background-color: rgba(0,0,0,0.55); /* Tint color */
 }
 
 #headerContent {
@@ -120,7 +120,7 @@
     border-width:1px;
     color:white;
     font-family:\"Times New Roman\";
-    padding:5px;
+    padding:30px;
     width:500px;
     border-radius: 25px;
     align-content: space-evenly;
@@ -155,7 +155,7 @@
     padding: 0px;
 }
 #generateQuote{
-align-content: center;
+    float: right;
 }
 
 #contactBlurb {
