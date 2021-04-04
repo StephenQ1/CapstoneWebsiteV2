@@ -21,9 +21,10 @@
 
 #wrapbot {
     height: 100%;
+    position: absolute;
+    background-position: top;
 
-    background-position: bottom;
-    background-color: rgba(0,0,0,0.55); /* Tint color */
+    /*background-color: rgba(0,0,0,0.55); !* Tint color *!*/
 }
 
 #headerContent {
@@ -122,6 +123,11 @@
     padding:5px;
     width:500px;
     border-radius: 25px;
+    align-content: space-evenly;
+    align-items: start;
+}
+#quoteForm label{
+    padding: 30px;
 }
 #quoteForm input{
     width: 125px;
@@ -135,7 +141,6 @@
 }
 #quoteForm textarea{
     width: 200px;
-    height: 150px;
     float: right;
 }
 
@@ -145,7 +150,10 @@
     font-size: large;
 }
 
-
+#subscription{
+    float: left;
+    padding: 0px;
+}
 
 #contactBlurb {
 

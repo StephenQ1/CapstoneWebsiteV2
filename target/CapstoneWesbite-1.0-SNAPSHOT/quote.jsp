@@ -66,13 +66,13 @@
 
                     <p>
                         <label>Mobile Phone
-                            <input type="tel" name="phone_mobile">
+                            <input type="tel" name="phone_mobile" required>
                         </label>
                     </p>
 
                     <p>
                         <label>Email Address
-                            <input type="email" name="email_address">
+                            <input type="email" name="email_address" required>
                         </label>
                     </p>
                     </fieldset>
@@ -81,6 +81,16 @@
                         <legend>Property Details</legend>
 
                     <p>
+                        <p>
+                            <label>Property Location
+                                <select id="property_location" name="location">
+                                    <option value="" selected="selected">Select One</option>
+                                    <option value="property_location_urbanD" >Dense Urban</option>
+                                    <option value="property_location_urban" >Urban</option>
+                                    <option value="property_location_rural" >Rural</option>
+                                </select>
+                            </label>
+                        </p>
                         <label>Property Age (Years)
                             <input type="number" name="property_age">
                         </label>
@@ -101,7 +111,7 @@
 
                     <p>
                         <label>Type of Dwelling
-                            <select id="property_dwelling_type" name="dwelling_type">
+                            <select id="property_dwelling_type" name="dwelling_type" >
                                 <option value="" selected="selected">Select One</option>
                                 <option value="dwelling_type_single" >Single-dwelling</option>
                                 <option value="dwelling_type_apartment" >Apartment</option>
@@ -123,19 +133,19 @@
 
                     <p>
                         <label>Driver Age (Years)
-                            <input type="number" name="auto_driver_age" id="driverAge">
+                            <input type="number" name="auto_driver_age" id="driverAge" required>
                         </label>
                     </p>
 
                     <p>
                         <label>Vehicle Age (Years)
-                            <input type="number" name="auto_age_years" id="vehicleAge">
+                            <input type="number" name="auto_age_years" id="vehicleAge" required>
                         </label>
                     </p>
 
                     <p>
                         <label>Number of Accidents (Past 5 Years)
-                            <input type="number" name="auto_accident_count" id="autoAccidentCount">
+                            <input type="number" name="auto_accident_count" id="autoAccidentCount" required>
                         </label>
                     </p>
                     </fieldset>
@@ -150,29 +160,44 @@
                         </label>
                     </p>
 
-                    <p><label> <input type="checkbox" name="newsletter" value="newsletter"> Subscribe to Our Newsletter </label></p>
+                    <p align="center"><label id="subscription"> <input  type="checkbox" name="newsletter" value="newsletter"> Subscribe to Our Newsletter </label></p>
 
-                    <p><button><a href="quote_generated.jsp">Generate Quote</a></button></p>
+                        <p align="center"><button style="width: 150px;height: 50px;" id="generateQuote" onclick="pageChange()">Generate Quote</button></p>
                     </fieldset>
-
-                    <%--TODO: on generated quote screen, add an "Email me this quote" button
-                            (no functionality, just a success message)--%>
-
-                    <%--TODO: Improve look and field of this form
-                            (fields and labels should be vertically aligned and equally spaced)--%>
-
                 </form>
             </div>
         </div>
     </div>
-<script>
-    function premiumCalculation(){
-        var numberOfAccidents = document.getElementById("autoAccidentCount").value;
-        var age = document.getElementById("driverAge").value;
-        var vehicleAge = document.getElementById("vehicleAge").value;
-        var carValue= document.getElementById("vehicleValue").value;
-    }
-</script>
+    <script>
+        function pageChange(){
+            location.href = "quote_generated.jsp"
+        }
+    </script>
+    <script>
+        function premiumCalculation(){
+            let numberOfAccidents = document.getElementById("autoAccidentCount").value;
+            let age = document.getElementById("driverAge").value;
+            let basePremium = 950;
+            let ageFactor, accidentFactor;
+            if (age <25){
+                ageFactor=2;
+            }
+            else if (age > 25){
+                ageFactor=1;
+            }
+            if (numberOfAccidents = 0){
+                accidentFactor = 0
+            }
+            else if (numberOfAccidents = 1){
+                accidentFactor = 1.25
+            }
+            else if (numberOfAccidents > 2){
+                accidentFactor = 2.50
+            }
+            let calculation = (basePremium * ageFactor)*accidentFactor;
+            alert(calculation)
+        }
+    </script>
 </body>
 <%@include file='footer.jsp'%>
 </html>
