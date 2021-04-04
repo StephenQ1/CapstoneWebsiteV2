@@ -14,7 +14,7 @@
             </div>
 
             <div id="quoteForm">
-                <form method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
+                <form method="get" enctype="application/x-www-form-urlencoded" action="quote_generated.jsp">
 
                     <fieldset>
                         <legend>Personal Details</legend>
@@ -162,17 +162,17 @@
 
                     <p align="center"><label id="subscription"> <input  type="checkbox" name="newsletter" value="newsletter"> Subscribe to Our Newsletter </label></p>
 
-                        <p align="center"><button style="width: 150px;height: 50px;" id="generateQuote" onclick="pageChange()">Generate Quote</button></p>
+                        <p><input align="center" type="submit" value="Generate Quote" style="width: 150px;height: 50px;" id="generateQuote"  ></p>
                     </fieldset>
                 </form>
             </div>
         </div>
     </div>
-    <script>
-        function pageChange(){
-            location.href = "quote_generated.jsp"
-        }
-    </script>
+<%--    <script>--%>
+<%--        $("generateQuote").onsubmit = function{--%>
+<%--            location.href = "quote_generated.jsp"--%>
+<%--        }--%>
+<%--    </script>--%>
     <script>
         function premiumCalculation(){
             let numberOfAccidents = document.getElementById("autoAccidentCount").value;
