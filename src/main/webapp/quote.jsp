@@ -117,25 +117,25 @@
 
                     <p>
                         <label>Vehicle Value
-                            <input type="number" name="auto_value">
+                            <input type="number" name="auto_value" id="vehicleValue" >
                         </label>
                     </p>
 
                     <p>
                         <label>Driver Age (Years)
-                            <input type="number" name="auto_driver_age">
+                            <input type="number" name="auto_driver_age" id="driverAge">
                         </label>
                     </p>
 
                     <p>
                         <label>Vehicle Age (Years)
-                            <input type="number" name="auto_age_years">
+                            <input type="number" name="auto_age_years" id="vehicleAge">
                         </label>
                     </p>
 
                     <p>
                         <label>Number of Accidents (Past 5 Years)
-                            <input type="number" name="auto_accident_count">
+                            <input type="number" name="auto_accident_count" id="autoAccidentCount">
                         </label>
                     </p>
                     </fieldset>
@@ -152,7 +152,7 @@
 
                     <p><label> <input type="checkbox" name="newsletter" value="newsletter"> Subscribe to Our Newsletter </label></p>
 
-                    <p><button>Generate Quote</button></p>
+                    <p><button><a href="quote_generated.jsp">Generate Quote</a></button></p>
                     </fieldset>
 
                     <%--TODO: on generated quote screen, add an "Email me this quote" button
@@ -165,5 +165,14 @@
             </div>
         </div>
     </div>
+<script>
+    function premiumCalculation(){
+        var numberOfAccidents = document.getElementById("autoAccidentCount").value;
+        var age = document.getElementById("driverAge").value;
+        var vehicleAge = document.getElementById("vehicleAge").value;
+        var carValue= document.getElementById("vehicleValue").value;
+    }
+</script>
 </body>
+<%@include file='footer.jsp'%>
 </html>

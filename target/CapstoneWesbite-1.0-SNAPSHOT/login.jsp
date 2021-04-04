@@ -23,10 +23,11 @@
                         </label>
                     </p>
 
-                    <p><button>Log In</button></p>
+                    <p align="center"><button>Log In</button></p>
                 </form>
             </div>
         </div>
     </div>
 </body>
+<%@include file='footer.jsp'%>
 </html>

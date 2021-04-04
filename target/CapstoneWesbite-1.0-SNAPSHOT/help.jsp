@@ -2,8 +2,8 @@
 <!DOCTYPE html>
 <html>
 <title>SMJ Interactive</title>
-<%@include file='Old/head.jsp'%>
-<%@include file='Old/header.jsp'%>
+<%@include file='head2.jsp'%>
+<%@include file='header2.jsp'%>
 <body>
 <img src="Photos/bodyBackground.jpg" alt="BodyB" id="BodyB" style="width:1920px;height:768px;">
 <p><h1 id="helpBlurb">Need Help?<br>Feel free to contact us using the information <br>below with your problems with our services.</h1></p>
@@ -20,4 +20,5 @@
     St. John's, NL, A1A 1A1</p>
 </div>
 </body>
+<%@include file='footer.jsp'%>
 </html>

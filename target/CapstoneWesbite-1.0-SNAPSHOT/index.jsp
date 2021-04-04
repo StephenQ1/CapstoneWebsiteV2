@@ -27,5 +27,5 @@
 </body>
 <%@include file='footer.jsp'%>
 <%--TODO: align footer with the bottom of the page using css--%>
-<%--TODO: add footer to this position (right before <html> on all pages--%>
+<%--TODO: add footer to this position (right before </html> on all pages--%>
 </html>

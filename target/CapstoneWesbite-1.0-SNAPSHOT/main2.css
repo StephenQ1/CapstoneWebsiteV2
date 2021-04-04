@@ -120,10 +120,32 @@
     color:white;
     font-family:\"Times New Roman\";
     padding:5px;
-    text-align:center;
-    width:550px;
+    width:500px;
     border-radius: 25px;
 }
+#quoteForm input{
+    width: 125px;
+    height: 20px;
+    float: right;
+}
+#quoteForm select{
+    width: 125px;
+    height: 20px;
+    float: right;
+}
+#quoteForm textarea{
+    width: 200px;
+    height: 150px;
+    float: right;
+}
+
+#emailMe{
+    width: 200px;
+    height: 100px;
+    font-size: large;
+}
+
+
 
 #contactBlurb {
 
