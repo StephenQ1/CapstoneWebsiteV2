@@ -168,14 +168,10 @@
             </div>
         </div>
     </div>
-<%--    <script>--%>
-<%--        $("generateQuote").onsubmit = function{--%>
-<%--            location.href = "quote_generated.jsp"--%>
-<%--        }--%>
-<%--    </script>--%>
+
     <script>
-        let accidents = document.getElementById("autoAccidentCount").value;
-        function premiumCalculation(){
+        document.getElementById("generateQuote").onclick = function premiumCalculation(){
+            let accidents = document.getElementById("autoAccidentCount").value;
             let numberOfAccidents = document.getElementById("autoAccidentCount").value;
             let age = document.getElementById("driverAge").value;
             let basePremium = 950;
@@ -196,7 +192,6 @@
                 accidentFactor = 2.50
             }
             let calculation = (basePremium * ageFactor)*accidentFactor;
-            alert(calculation)
         }
     </script>
 </body>

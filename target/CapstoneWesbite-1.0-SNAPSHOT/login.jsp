@@ -9,7 +9,7 @@
     <div class="pageContent">
         <div class="contentContainer">
             <div id="quoteForm">
-                <form method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
+                <form method="get" enctype="application/x-www-form-urlencoded" action="login_successful.jsp">
 
                     <p>
                         <label>E-mail Address
@@ -23,11 +23,13 @@
                         </label>
                     </p>
 
-                    <p align="center"><button>Log In</button></p>
+                    <p><input style="width: 133px; height: 25px" align="center" type="submit" value="Log In" /></p>
                 </form>
             </div>
         </div>
     </div>
 </body>
+<div id="specialFooter">
 <%@include file='footer.jsp'%>
+</div>
 </html>

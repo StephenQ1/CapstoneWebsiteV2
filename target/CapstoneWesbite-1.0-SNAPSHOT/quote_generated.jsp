@@ -11,20 +11,17 @@
 </script>
 <script>
     function alertMe(){
-        alert("get alerted hoe")
+        alert(accidents);
     }
     function foo(){
         document.getElementById("showMe").onclick = premiumCalculation();
     }
-    alert(accidents);
 </script>
 
 
     <div class="pageContent">
         <div class="contentContainer">
-            <p align="left">
-                <input type="button" value="Show me the quote" onclick="foo()" id="showMe">
-            </p>
+
             <p align="center">
                 <input type="button" value="Email me the Quote" onclick="sendEmail()" id="emailMe">
             </p>
@@ -32,5 +29,7 @@
         </div>
     </div>
 </body>
+<div id="specialFooter">
 <%@include file='footer.jsp'%>
+</div>
 </html>

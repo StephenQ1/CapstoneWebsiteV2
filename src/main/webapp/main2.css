@@ -250,3 +250,12 @@ footer {
     font-size:small;
     text-align: center;
 }
+#specialFooter{
+    color:white;
+    font-size:small;
+    text-align: center;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 2.5em;
+}
