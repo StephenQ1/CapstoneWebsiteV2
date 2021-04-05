@@ -10,18 +10,18 @@
     }
 </script>
 <script>
+
+    let accidents = document.getElementById("autoAccidentCount");
     function alertMe(){
         alert(accidents);
     }
-    function foo(){
-        document.getElementById("showMe").onclick = premiumCalculation();
-    }
+
 </script>
-
-
     <div class="pageContent">
         <div class="contentContainer">
-
+            <p align="center">
+                <input type="button" value="test" onclick="alertMe()" id="test">
+            </p>
             <p align="center">
                 <input type="button" value="Email me the Quote" onclick="sendEmail()" id="emailMe">
             </p>

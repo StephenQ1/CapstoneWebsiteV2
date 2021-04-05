@@ -14,7 +14,7 @@
             </div>
 
             <div id="quoteForm">
-                <form method="get" enctype="application/x-www-form-urlencoded" action="quote_generated.jsp">
+                <form id="quoteInfo" method="get" enctype="application/x-www-form-urlencoded" action="quote_generated.jsp">
 
                     <fieldset>
                         <legend>Personal Details</legend>
@@ -36,7 +36,7 @@
 
                     <p>
                         <label>First Name
-                            <input type="text" name="customer_fName" required>
+                            <input type="text" name="customer_fName" id="CustFName" required>
                         </label>
                     </p>
 
@@ -170,8 +170,20 @@
     </div>
 
     <script>
+
+        document.querySelector('form.quoteInfo').addEventListener('submit', function(e) {
+            e.preventDefault();
+            let firstName = document.getElementById("CustFName");
+            let accidents = document.getElementById("autoAccidentCount");
+            let x = document.querySelector('form.quoteInfo').elements;
+            alert(firstName).value;
+            alert(accidents).value;
+        });
+
+
+        let firstName = document.getElementById("CustFName");
+        let accidents = "Godaeo";
         document.getElementById("generateQuote").onclick = function premiumCalculation(){
-            let accidents = document.getElementById("autoAccidentCount").value;
             let numberOfAccidents = document.getElementById("autoAccidentCount").value;
             let age = document.getElementById("driverAge").value;
             let basePremium = 950;
