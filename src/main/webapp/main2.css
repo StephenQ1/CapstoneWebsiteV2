@@ -23,7 +23,7 @@
     height: 100%;
     position: absolute;
     background-position: top;
-
+    background-repeat: repeat-y;
     background-color: rgba(0,0,0,0.55); /* Tint color */
 }
 

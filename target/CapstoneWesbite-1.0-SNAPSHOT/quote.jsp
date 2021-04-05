@@ -174,6 +174,7 @@
 <%--        }--%>
 <%--    </script>--%>
     <script>
+        let accidents = document.getElementById("autoAccidentCount").value;
         function premiumCalculation(){
             let numberOfAccidents = document.getElementById("autoAccidentCount").value;
             let age = document.getElementById("driverAge").value;

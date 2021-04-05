@@ -16,6 +16,7 @@
     function foo(){
         document.getElementById("showMe").onclick = premiumCalculation();
     }
+    alert(accidents);
 </script>
 
 
