@@ -14,7 +14,7 @@
             </div>
 
             <div id="quoteForm">
-                <form id="quoteInfo" method="get" enctype="application/x-www-form-urlencoded" action="quote_generated.jsp">
+                <form id="quoteInfo" method="post" enctype="application/x-www-form-urlencoded" action="quote_generated.jsp">
 
                     <fieldset>
                         <legend>Personal Details</legend>
@@ -36,7 +36,7 @@
 
                     <p>
                         <label>First Name
-                            <input type="text" name="customer_fName" id="CustFName" required>
+                            <input type="text" name="customer_fName" required>
                         </label>
                     </p>
 
@@ -83,7 +83,7 @@
                     <p>
                         <p>
                             <label>Property Location
-                                <select id="property_location" name="location">
+                                <select id="property_location" name="location" required>
                                     <option value="" selected="selected">Select One</option>
                                     <option value="property_location_urbanD" >Dense Urban</option>
                                     <option value="property_location_urban" >Urban</option>
@@ -168,21 +168,7 @@
             </div>
         </div>
     </div>
-
     <script>
-
-        document.querySelector('form.quoteInfo').addEventListener('submit', function(e) {
-            e.preventDefault();
-            let firstName = document.getElementById("CustFName");
-            let accidents = document.getElementById("autoAccidentCount");
-            let x = document.querySelector('form.quoteInfo').elements;
-            alert(firstName).value;
-            alert(accidents).value;
-        });
-
-
-        let firstName = document.getElementById("CustFName");
-        let accidents = "Godaeo";
         document.getElementById("generateQuote").onclick = function premiumCalculation(){
             let numberOfAccidents = document.getElementById("autoAccidentCount").value;
             let age = document.getElementById("driverAge").value;
@@ -204,6 +190,7 @@
                 accidentFactor = 2.50
             }
             let calculation = (basePremium * ageFactor)*accidentFactor;
+            alert("The premium calculation total comes to: $" + calculation)
         }
     </script>
 </body>
