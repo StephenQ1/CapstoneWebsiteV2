@@ -209,7 +209,6 @@
         }
 
          document.getElementById("generateQuote").onclick = function showResults() {
-             alert("Crackhead")
             let form = document.getElementById("quoteForm");
             let results = document.getElementById("quoteResults")
             if (form.style.display == "block") {
