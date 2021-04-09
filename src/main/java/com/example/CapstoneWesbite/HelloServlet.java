@@ -39,6 +39,7 @@ public class HelloServlet extends HttpServlet {
             throws ServletException, IOException
     {
         System.out.println(request.getParameter("customer_fName"));
+        System.out.println(request.getParameter("customer_lName"));
         String SQL_Statement_test = "insert into SMJ_CLIENT values (?, ?, ?, ?)";
         try {
             Class.forName("oracle.jdbc.driver.OracleDriver");
@@ -47,9 +48,8 @@ public class HelloServlet extends HttpServlet {
             PreparedStatement posted = connection.prepareStatement(SQL_Statement_test);
             posted.setInt(1, ThreadLocalRandom.current().nextInt(1000, 1000000 + 1));
             posted.setString(2, request.getParameter("customer_fName"));
-//            posted.setString(2, getInitParameter("customer_fName"));
-            posted.setString(3, getInitParameter("customer_LName"));
-            posted.setString(4, getInitParameter("phone_mobile"));
+            posted.setString(3, request.getParameter("customer_lName"));
+            posted.setString(4, request.getParameter("phone_mobile"));
             posted.executeUpdate();
             posted.close();
             connection.close();

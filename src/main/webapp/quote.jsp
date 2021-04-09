@@ -40,11 +40,11 @@
                         </label>
                     </p>
 
-<%--                    <p>--%>
-<%--                        <label>Last Name--%>
-<%--                            <input type="text" name="customer_LName" required>--%>
-<%--                        </label>--%>
-<%--                    </p>--%>
+                    <p>
+                        <label>Last Name
+                            <input type="text" name="customer_lName" required>
+                        </label>
+                    </p>
 
                     <%--<p>
                         <label>Date of Birth
