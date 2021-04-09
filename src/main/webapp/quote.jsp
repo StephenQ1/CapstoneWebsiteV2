@@ -14,12 +14,12 @@
             </div>
 
             <div id="quoteForm">
-                <form id="quoteInfo" method="post" enctype="application/x-www-form-urlencoded">
+                <form method="post" enctype="application/x-www-form-urlencoded" action="helloServlet">
 
                     <fieldset>
                         <legend>Personal Details</legend>
 
-                    <p>
+                    <%--<p>
                         <label>Title
                             <select id="quote_title" name="title">
                                 <option value="" selected="selected">Select One</option>
@@ -32,27 +32,27 @@
                                 <option value="title_prof" >Prof.</option>
                             </select>
                         </label>
-                    </p>
+                    </p>--%>
 
                     <p>
                         <label>First Name
-                            <input type="text" name="customer_fName" id="customer_fName" required>
+                            <input type="text" name="customer_fName" required>
                         </label>
                     </p>
 
-                    <p>
-                        <label>Last Name
-                            <input type="text" name="customer_LName"  id="customer_LName" required>
-                        </label>
-                    </p>
+<%--                    <p>--%>
+<%--                        <label>Last Name--%>
+<%--                            <input type="text" name="customer_LName" required>--%>
+<%--                        </label>--%>
+<%--                    </p>--%>
 
-                    <p>
+                    <%--<p>
                         <label>Date of Birth
-                            <input type="datetime-local" name="dob"  id="dob" required>
+                            <input type="datetime-local" name="dob" >
                         </label>
-                    </p>
+                    </p>--%>
 
-                    <p>
+                    <%--<p>
                         <label>Home Phone
                             <input type="tel" name="phone_home">
                         </label>
@@ -62,32 +62,32 @@
                         <label>Work Phone
                             <input type="tel" name="phone_work">
                         </label>
-                    </p>
+                    </p>--%>
 
-                    <p>
-                        <label>Mobile Phone
-                            <input type="tel" name="phone_mobile"  id="mobileNum" required>
-                        </label>
-                    </p>
+<%--                    <p>--%>
+<%--                        <label>Mobile Phone--%>
+<%--                            <input type="tel" name="phone_mobile" required>--%>
+<%--                        </label>--%>
+<%--                    </p>--%>
 
-                    <p>
+                    <%--<p>
                         <label>Email Address
-                            <input type="email" name="email_address"  id="email" required>
+                            <input type="email" name="email_address" >
                         </label>
-                    </p>
+                    </p>--%>
                     </fieldset>
 
-                    <fieldset>
+<%--                    <fieldset>
                         <legend>Property Details</legend>
 
                     <p>
                         <p>
                             <label>Property Location
-                                <select id="property_location" name="location"  id="location" required>
+                                <select id="property_location" name="location">
                                     <option value="" selected="selected">Select One</option>
-                                    <option value="Dense Urban" >Dense Urban</option>
-                                    <option value="Urban" >Urban</option>
-                                    <option value="Rural" >Rural</option>
+                                    <option value="property_location_urbanD" >Dense Urban</option>
+                                    <option value="property_location_urban" >Urban</option>
+                                    <option value="property_location_rural" >Rural</option>
                                 </select>
                             </label>
                         </p>
@@ -158,32 +158,20 @@
                         <label>Comments
                             <textarea name="comments" maxlength="500"></textarea>
                         </label>
-                    </p>
+                    </p>--%>
 
-                    <p align="center"><label id="subscription"> <input  type="checkbox" name="newsletter" value="newsletter"> Subscribe to Our Newsletter </label></p>
+<%--                    <p align="center"><label id="subscription"> <input  type="checkbox" name="newsletter" value="newsletter"> Subscribe to Our Newsletter </label></p>--%>
 
                         <p><input align="center" type="submit" value="Generate Quote" style="width: 150px;height: 50px;" id="generateQuote"  ></p>
                     </fieldset>
                 </form>
             </div>
-
-            <div id="quoteResults">
-                <p align="center" id="quoteResultsbody">
-                    Name: <%= request.getParameter("customer_fName")%>
-                    <%= request.getParameter("customer_LName")%><br>
-                    Mobile Phone Number: <%= request.getParameter("phone_mobile")%><br>
-                    Email Address: <%= request.getParameter("email_address")%><br>
-                    Location: <%= request.getParameter("location")%><br>
-                    Driver Age: <%= request.getParameter("auto_driver_age")%><br>
-                    Vehicle Age: <%= request.getParameter("auto_age_years")%><br>
-                    Accident Count:<%= request.getParameter("auto_accident_count")%><br>
-                    <input type="button" value="Email me the Quote" onclick="sendEmail()" id="emailMe">
-                </p>
-            </div>
         </div>
     </div>
-    <script>
-         function premiumCalculation(){
+
+<%--    <script>
+        document.getElementById("generateQuote").onclick = function premiumCalculation(){
+            let accidents = document.getElementById("autoAccidentCount").value;
             let numberOfAccidents = document.getElementById("autoAccidentCount").value;
             let age = document.getElementById("driverAge").value;
             let basePremium = 950;
@@ -204,32 +192,8 @@
                 accidentFactor = 2.50
             }
             let calculation = (basePremium * ageFactor)*accidentFactor;
-
-            alert("The premium calculation total comes to: $" + calculation)
         }
-
-         document.getElementById("generateQuote").onclick = function showResults() {
-            let form = document.getElementById("quoteForm");
-            let results = document.getElementById("quoteResults")
-            if (form.style.display == "block") {
-                alert("If");
-                form.style.display = "none";
-                results.style.display="block";
-
-            }
-            else {
-                alert("Else");
-                form.style.display="none";
-                results.style.display="block";
-            }
-             premiumCalculation();
-        }
-        function sendEmail() {
-            alert("Email Sent");
-            document.getElementById("quoteResults").innerText = "premium"
-        }
-    </script>
-
+    </script>--%>
 </body>
 <%@include file='footer.jsp'%>
 </html>
