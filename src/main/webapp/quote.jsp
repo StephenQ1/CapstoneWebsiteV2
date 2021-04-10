@@ -14,7 +14,7 @@
             </div>
 
             <div id="quoteForm">
-                <form method="post" enctype="application/x-www-form-urlencoded" action="helloServlet">
+                <form method="post" enctype="application/x-www-form-urlencoded" action="helloServlet"  onsubmit="premiumCalculation()">
 
                     <fieldset>
                         <legend>Personal Details</legend>
@@ -200,10 +200,13 @@
 
         // function premiumCalculation(e){
         function premiumCalculation(){
+
+
+
             var accidentCount = document.getElementById("autoAccidentCount").value;
-            //alert(accidentCount);
+            alert(accidentCount);
             var age = document.getElementById("driverAge").value;
-            //alert(age);
+            alert(age);
             var basePremium = 950;
             //alert(basePremium);
             //var ageFactor, accidentFactor;
