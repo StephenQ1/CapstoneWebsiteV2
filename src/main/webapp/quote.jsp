@@ -64,11 +64,11 @@
                         </label>
                     </p>--%>
 
-<%--                    <p>--%>
-<%--                        <label>Mobile Phone--%>
-<%--                            <input type="tel" name="phone_mobile" required>--%>
-<%--                        </label>--%>
-<%--                    </p>--%>
+                    <p>
+                        <label>Mobile Phone
+                            <input type="tel" name="phone_mobile" required>
+                        </label>
+                    </p>
 
                     <%--<p>
                         <label>Email Address
@@ -77,7 +77,7 @@
                     </p>--%>
                     </fieldset>
 
-<%--                    <fieldset>
+                    <fieldset>
                         <legend>Property Details</legend>
 
                     <p>
@@ -158,7 +158,7 @@
                         <label>Comments
                             <textarea name="comments" maxlength="500"></textarea>
                         </label>
-                    </p>--%>
+                    </p>
 
 <%--                    <p align="center"><label id="subscription"> <input  type="checkbox" name="newsletter" value="newsletter"> Subscribe to Our Newsletter </label></p>--%>
 
@@ -194,6 +194,58 @@
             let calculation = (basePremium * ageFactor)*accidentFactor;
         }
     </script>--%>
+
+    <script>
+
+
+        // function premiumCalculation(e){
+        function premiumCalculation(){
+            var accidentCount = document.getElementById("autoAccidentCount").value;
+            //alert(accidentCount);
+            var age = document.getElementById("driverAge").value;
+            //alert(age);
+            var basePremium = 950;
+            //alert(basePremium);
+            //var ageFactor, accidentFactor;
+
+            //alert(accidentCount);
+            // alert(age);
+            // alert(basePremium);
+            //alert();
+
+            // if (age <25){
+            //     ageFactor=2;
+            // }
+            // else if (age > 25){
+            //     ageFactor=1;
+            // }
+            // if (numberOfAccidents = 0){
+            //     accidentFactor = 0
+            // }
+            // else if (numberOfAccidents = 1){
+            //     accidentFactor = 1.25
+            // }
+            // else if (numberOfAccidents > 2){
+            //     accidentFactor = 2.50
+            // }
+            // var calculation = (basePremium * ageFactor)*accidentFactor;
+//            e.preventDefault;
+        }
+    </script>
+
+
+
+<%--    <form onsubmit="return premiumCalculation(e)">--%>
+<%--    <form onsubmit="return premiumCalculation()">--%>
+    <form onsubmit="premiumCalculation()">
+        <p><input align="center" type="submit" value="Test" style="width:150px; height:50px;" id="test"  ></p>
+    </form>
+
+<%--    <form onsubmit="return premiumCalculation()">--%>
+<%--        <p><input align="center" type="submit" value="Test" style="width: 150px;height: 50px;" id="test"  ></p>--%>
+<%--    </form>--%>
+
+
 </body>
 <%@include file='footer.jsp'%>
 </html>

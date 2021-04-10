@@ -32,15 +32,14 @@ public class HelloServlet extends HttpServlet {
         out.println("</body></html>");
     }
 
-    public void destroy() {
-    }
-
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException
     {
-        System.out.println(request.getParameter("customer_fName"));
-        System.out.println(request.getParameter("customer_lName"));
+        //System.out.println(request.getParameter("customer_fName")); // DEBUG
+        //System.out.println(request.getParameter("customer_lName")); // DEBUG
+
         String SQL_Statement_test = "insert into SMJ_CLIENT values (?, ?, ?, ?)";
+                // NOTE: number of ? must match number of fields being posted for them to insert properly
         try {
             Class.forName("oracle.jdbc.driver.OracleDriver");
             Connection connection = DBConnection.getConnection();
@@ -62,5 +61,8 @@ public class HelloServlet extends HttpServlet {
         catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public void destroy() {
     }
 }
