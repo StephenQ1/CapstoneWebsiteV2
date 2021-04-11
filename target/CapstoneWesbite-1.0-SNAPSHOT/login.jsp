@@ -2,15 +2,16 @@
 <!DOCTYPE html>
 <html>
 <title>SMJ - Log-in / Sign-up</title>
-<%@include file='head2.jsp'%>
-<%@include file='header2.jsp'%>
+<%@include file='head.jsp'%>
+<%@include file='header.jsp'%>
 
 <body id="wrapbot" class="backgroundImages" style="background-image: url('Photos/aboutBackground.jpg');">
     <div class="pageContent">
         <div class="contentContainer">
             <div id="quoteForm">
+<%--            <div id="loginForm">--%>
                 <form method="get" enctype="application/x-www-form-urlencoded" action="login_successful.jsp">
-
+                    <h1> Login: </h1>
                     <p>
                         <label>E-mail Address
                             <input type="text" name="email" required>

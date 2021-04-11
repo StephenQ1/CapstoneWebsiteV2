@@ -2,8 +2,8 @@
 <!DOCTYPE html>
 <html>
 <title>SMJ - Log-in Successful</title>
-<%@include file='head2.jsp'%>
-<%@include file='header2.jsp'%>
+<%@include file='head.jsp'%>
+<%@include file='header.jsp'%>
 
 <body id="wrapbot" class="backgroundImages" style="background-image: url('Photos/aboutBackground.jpg');">
 <div class="pageContent">

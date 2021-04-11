@@ -2,8 +2,8 @@
 <!DOCTYPE html>
 <html>
 <title>SMJ Interactive</title>
-<%@include file='head2.jsp'%>
-<%@include file='header2.jsp'%>
+<%@include file='head.jsp'%>
+<%@include file='header.jsp'%>
 <body>
 <img src="Photos/bodyBackground.jpg" alt="BodyB" id="BodyB" style="width:1920px;height:768px;">
 <p><h1 id="helpBlurb">Need Help?<br>Feel free to contact us using the information <br>below with your problems with our services.</h1></p>

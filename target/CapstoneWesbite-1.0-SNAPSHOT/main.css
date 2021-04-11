@@ -17,6 +17,7 @@
     background-image: url('Photos/headerBackground.jpg');
     background-color: rgba(0,0,0,0.5); /* Tint color */
 
+
 }
 
 #wrapbot {
@@ -72,12 +73,44 @@
     border-style:solid;
     color:white;
     font-size:x-large;
-    padding:1em;
+    padding:1.15em;
     text-align:left;
     border-radius: 25px;
+    margin-left: 12em;
+    margin-right: 12em;
 }
 
 #servicesBlurb {
+    margin: auto;
+    margin-bottom: 2em;
+    background-color:#181A1B;
+    border:solid;
+    border-color:white;
+    border-width:1px;
+    color:white;
+    font-family:\"Times New Roman\";
+    padding:5px;
+    text-align:center;
+    width:550px;
+    border-radius: 25px;
+}
+
+#quoteBlurb {
+    margin: auto;
+    margin-bottom: 2em;
+    background-color:#181A1B;
+    border:solid;
+    border-color:white;
+    border-width:1px;
+    color:white;
+    font-family:\"Times New Roman\";
+    padding:25px;
+    text-align:center;
+    width:550px;
+    border-radius: 25px;
+}
+
+#generatedQuoteDiv{
     margin: auto;
     margin-bottom: 2em;
     background-color:#181A1B;
@@ -121,6 +154,7 @@
     color:white;
     font-family:\"Times New Roman\";
     padding:30px;
+    padding-bottom: 5em;
     width:500px;
     border-radius: 25px;
     align-content: space-evenly;
@@ -143,6 +177,27 @@
     width: 200px;
     float: right;
 }
+
+/*#loginForm{*/
+/*    margin: auto;*/
+/*    margin-bottom: 2em;*/
+/*    background-color:#181A1B;*/
+/*    border:solid;*/
+/*    border-color:white;*/
+/*    border-width:1px;*/
+/*    color:white;*/
+/*    font-family:\"Times New Roman\";*/
+/*    padding:30px;*/
+/*    padding-bottom: 5em;*/
+/*    width:500px;*/
+/*    border-radius: 25px;*/
+/*    align-content: space-evenly;*/
+/*    align-items: start;*/
+/*}*/
+
+/*#loginForm input{*/
+/*    margin-top: 1.5em;*/
+/*}*/
 
 #emailMe{
     width: 200px;
@@ -203,13 +258,21 @@
 .column {
     display: table-cell;
     background-color: #181A1B;
-    padding: 0.7em;
+    padding: 1.25em;
     max-width: 75em;
     height: auto;
     border:solid;
     border-color:white;
     border-width:1px;
     border-radius: 25px;
+}
+
+.column a {
+    color: white;
+}
+
+.column img {
+    margin-top: 3.5em;
 }
 
 
@@ -250,6 +313,7 @@ footer {
     font-size:small;
     text-align: center;
 }
+
 #specialFooter{
     color:white;
     font-size:small;
@@ -259,6 +323,7 @@ footer {
     width: 100%;
     height: 2.5em;
 }
+
 #quoteResults{
     margin: auto;
     margin-bottom: 2em;
@@ -274,3 +339,17 @@ footer {
     align-content: space-evenly;
     align-items: start;
 }
+
+#logo {
+    max-height: 3.5em;
+    background-color:#181A1B;
+    border-color:#000;
+    border-style:solid;
+    color:white;
+    font-size:x-large;
+    padding:1em;
+    text-align:left;
+    border-radius: 25px;
+    margin-bottom: 0.75em;
+}
+
