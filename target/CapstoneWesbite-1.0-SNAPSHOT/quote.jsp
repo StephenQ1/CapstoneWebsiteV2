@@ -15,7 +15,7 @@
                 </div>
 
                 <div id="quoteForm">
-                    <form method="post" enctype="application/x-www-form-urlencoded" action="helloServlet"  onsubmit="premiumCalculation()" >
+                    <form method="post" enctype="application/x-www-form-urlencoded" action="quote_generated.jsp"  onsubmit="premiumCalculation()" >
 
                         <fieldset>
                             <legend>Personal Details</legend>
@@ -49,7 +49,7 @@
 
                         <p>
                             <label>Date of Birth
-                                <input type="datetime-local" name="dob" >
+                                <input type="datetime-local" name="dob" required>
                             </label>
                         </p>
 
@@ -73,7 +73,7 @@
 
                         <p>
                             <label>Email Address
-                                <input type="email" name="email_address" >
+                                <input type="email" name="email_address" required>
                             </label>
                         </p>
                         </fieldset>
@@ -84,7 +84,7 @@
                         <p>
                             <p>
                                 <label>Property Location
-                                    <select id="property_location" name="location">
+                                    <select id="property_location" name="location" required>
                                         <option value="" selected="selected">Select One</option>
                                         <option value="Dense Urban" >Dense Urban</option>
                                         <option value="Urban" >Urban</option>
@@ -93,13 +93,13 @@
                                 </label>
                             </p>
                             <label>Property Age (Years)
-                                <input type="number" name="property_age" id="propertyAge">
+                                <input type="number" name="property_age" id="propertyAge" required>
                             </label>
                         </p>
 
                         <p>
                             <label>Type of Heating
-                                <select id="property_heating_type" name="heating_type">
+                                <select id="property_heating_type" name="heating_type" required>
                                     <option value="" selected="selected">Select One</option>
                                     <option value="heating_type_electric" >Electric</option>
                                     <option value="heating_type_oil" >Oil</option>
