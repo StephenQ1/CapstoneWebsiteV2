@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
-<title>SMJ - Log-in / Sign-up</title>
+<title>Taylor Insurance - Log-in</title>
 <%@include file='head.jsp'%>
 <%@include file='header.jsp'%>
 
@@ -30,5 +30,7 @@
         </div>
     </div>
 </body>
-<%@include file='footer.jsp'%>
+<div id="specialFooter">
+    <%@include file='footer.jsp'%>
+</div>
 </html>

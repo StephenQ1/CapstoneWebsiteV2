@@ -1,7 +1,7 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html>
-<title>SMJ Interactive</title>
+<title>Taylor Insurance</title>
 <%@include file='head.jsp'%>
 <%@include file='header.jsp'%>
 

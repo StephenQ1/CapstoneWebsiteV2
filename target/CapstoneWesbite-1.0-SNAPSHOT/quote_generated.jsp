@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8"%>
 <html>
-<title>SMJ - Your Quote</title>
+<title>Taylor Insurance - Your Quote</title>
 <%@include file='head.jsp'%>
 <%@include file='header.jsp'%>
 <body id="wrapbot" class="backgroundImages" style="background-image: url('Photos/aboutBackground.jpg');">

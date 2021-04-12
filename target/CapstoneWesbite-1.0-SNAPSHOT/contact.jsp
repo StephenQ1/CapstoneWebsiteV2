@@ -1,14 +1,14 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
-<title>SMJ - Contact Us</title>
+<title>Taylor Insurance - Contact Us</title>
 <%@include file='head.jsp'%>
 <%@include file='header.jsp'%>
 <body id="wrapbot" class="backgroundImages" style="background-image: url('Photos/aboutBackground.jpg');">
 <div class="pageContent">
     <div class="contentContainer">
         <div id="servicesBlurb">
-            <h1>Contact SMJ Interactive</h1>
+            <h1>Contact Taylor Insurance</h1>
             <p>Reach out to us using the information below and inquire about our rates!</p>
         </div>
         <div class="row">
@@ -58,7 +58,7 @@
                 <img src="Photos/computer.jpg" alt="computer" id="salesPic" style="width:100px;height:100px;">
                 <h3 id="salesTitle">By E-mail</h3>
                 <p id="salesDescription">Email us directly. We reply within 48 business hours.</p>
-                <address><h5><a href="mailto:sales@smjinteractive.com">Click here</a></h5></address>
+                <address><h5><a href="mailto:sales@taylorinsurance.com">Click here</a></h5></address>
                 <img src="Photos/heading.png" alt="heading" id="headingPic" style="width:400px;">
             </div>
         </div>

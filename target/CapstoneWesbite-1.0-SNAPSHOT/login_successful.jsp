@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
-<title>SMJ - Log-in Successful</title>
+<title>Taylor Insurance - Log-in Successful</title>
 <%@include file='head.jsp'%>
 <%@include file='header.jsp'%>
 
