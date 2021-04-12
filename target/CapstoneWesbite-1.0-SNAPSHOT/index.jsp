@@ -1,4 +1,5 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%--<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>--%>
+<%@ page contentType="text/html;charset=UTF-8"%>
 <!DOCTYPE html>
 <html>
 <title>SMJ Interactive</title>
@@ -28,6 +29,4 @@
 </div>
 </body>
 <%@include file='footer.jsp'%>
-<%--TODO: align footer with the bottom of the page using css--%>
-<%--TODO: add footer to this position (right before </html> on all pages--%>
 </html>
