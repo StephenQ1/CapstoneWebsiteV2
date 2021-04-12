@@ -2,14 +2,14 @@
 <!DOCTYPE html>
 <html>
 <title>SMJ - Services</title>
-<%@include file='head.jsp'%>
-<%@include file='header.jsp'%>
+<%@include file='head2.jsp'%>
+<%@include file='header2.jsp'%>
 
 <body id="wrapbot" class="backgroundImages" style="background-image: url('Photos/servicesBackground.jpg');">
 <div class="pageContent">
     <div class="contentContainer">
         <div id="servicesBlurb">
-            <h1>What we offer</h1>
+            <h1>What we offer.</h1>
             <p>From design to execution, out expert combination of forward thinking, resourceful advice,
                 skilled development and advanced design give our customers the edge on their competition.</p>
     </div>

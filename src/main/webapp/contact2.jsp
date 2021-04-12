@@ -2,8 +2,8 @@
 <!DOCTYPE html>
 <html>
 <title>SMJ - Contact Us</title>
-<%@include file='head.jsp'%>
-<%@include file='header.jsp'%>
+<%@include file='head2.jsp'%>
+<%@include file='header2.jsp'%>
 <body id="wrapbot" class="backgroundImages" style="background-image: url('Photos/aboutBackground.jpg');">
 <div class="pageContent">
     <div class="contentContainer">
@@ -57,9 +57,9 @@
             <div class="column">
                 <img src="Photos/computer.jpg" alt="computer" id="salesPic" style="width:100px;height:100px;">
                 <h3 id="salesTitle">By E-mail</h3>
-                <p id="salesDescription">Email us directly. We reply within 48 business hours.</p>
+                <p id="salesDescription">Email us directly and we will reply within 48 business hours!</p>
                 <address><h5><a href="mailto:sales@smjinteractive.com">Click here</a></h5></address>
-                <img src="Photos/heading.png" alt="heading" id="headingPic" style="width:400px;">
+                <img src="Photos/heading.jpg" alt="heading" id="headingPic" style="width:400px;">
             </div>
         </div>
     </div>

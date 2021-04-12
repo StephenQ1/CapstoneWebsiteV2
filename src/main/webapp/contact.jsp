@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8"%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
 <title>SMJ - Contact Us</title>
@@ -52,6 +52,7 @@
                         <td>Closed</td>
                     </tr>
                 </table>
+                <%--<button id="contactButton" type="button"><a id="contactLink" href="help.jsp">Contact Us!</a></button>--%>
             </div>
             <div class="column">
                 <img src="Photos/computer.jpg" alt="computer" id="salesPic" style="width:100px;height:100px;">

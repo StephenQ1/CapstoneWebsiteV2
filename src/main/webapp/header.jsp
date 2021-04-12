@@ -1,6 +1,7 @@
 <html>
 <header id="wraptop" class="backgroundImages headerContent">
     <div id="headerContent">
+<%--        <img src="Photos/PRLogo.jpg" alt="Logo" id="Logo" style="min-width: 200px; max-width:125%; height:auto;">--%>
         <img src="Photos/heading.png" alt="Logo" id="logo" style="max-width:30%; height:auto;">
 
         <div id="navBar">
