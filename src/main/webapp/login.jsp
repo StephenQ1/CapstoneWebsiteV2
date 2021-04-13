@@ -10,7 +10,7 @@
         <div class="contentContainer">
             <div id="quoteForm">
 <%--            <div id="loginForm">--%>
-                <form method="get" enctype="application/x-www-form-urlencoded" action="login_successful.jsp">
+                <form method="post" enctype="application/x-www-form-urlencoded" action="login_successful.jsp">
                     <h1> Login: </h1>
                     <p>
                         <label>E-mail Address

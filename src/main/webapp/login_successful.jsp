@@ -8,11 +8,16 @@
 <body id="wrapbot" class="backgroundImages" style="background-image: url('Photos/aboutBackground.jpg');">
 <div class="pageContent">
     <div class="contentContainer">
-        <h1 align="center">Log-in Successful!</h1>
+        <div id="quoteForm">
+        <h1 align="center" id="loginMessage" style="display: block">Log-in Successful!</h1>
+        <p align="center" id="loginButton" style="display: block">
+            E-mail Address: <%= request.getParameter("email")%><br>
+            Password: <%= request.getParameter("password")%><br>
+            <button style="width: 170px; height: 50px" onclick="location.href ='login_show_quote.jsp'">Show Previous Policies</button></p>
+
+        </div>
     </div>
 </div>
 </body>
-<div id="specialFooter">
 <%@include file='footer.jsp'%>
-</div>
 </html>

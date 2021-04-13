@@ -80,7 +80,31 @@
 
                         <fieldset>
                             <legend>Property Details</legend>
-
+                            <p>
+                                <label>Street Number
+                                    <input type="text" name="street_number" id="streetNum" required>
+                                </label>
+                            </p>
+                            <p>
+                                <label>City
+                                    <input type="text" name="city" id="user_city" required>
+                                </label>
+                            </p>
+                            <p>
+                                <label>State/Province
+                                    <input type="text" name="province" id="state_province" required>
+                                </label>
+                            </p>
+                            <p>
+                                <label>Country
+                                    <input type="text" name="country" id="user_country" required>
+                                </label>
+                            </p>
+                            <p>
+                                <label>Postal Code
+                                    <input type="text" name="postal_code" id="postCode" required>
+                                </label>
+                            </p>
                         <p>
                             <p>
                                 <label>Property Location
@@ -125,7 +149,26 @@
 
                         <fieldset>
                             <legend>Auto Details</legend>
-
+                            <p>
+                                <label>Vehicle Make
+                                    <input type="text" name="auto_make" id="make" required>
+                                </label>
+                            </p>
+                            <p>
+                                <label>Vehicle Model
+                                    <input type="text" name="auto_model" id="model" required>
+                                </label>
+                            </p>
+                            <p>
+                                <label>Vehicle Color
+                                    <input type="text" name="auto_color" id="color">
+                                </label>
+                            </p>
+                            <p>
+                                <label>Vehicle Age (Years)
+                                    <input type="number" name="auto_age_years" id="vehicleAge" required>
+                                </label>
+                            </p>
                         <p>
                             <label>Vehicle Value
                                 <input type="number" name="auto_value" id="vehicleValue" >
@@ -135,12 +178,6 @@
                         <p>
                             <label>Driver Age (Years)
                                 <input type="number" name="auto_driver_age" id="driverAge" required>
-                            </label>
-                        </p>
-
-                        <p>
-                            <label>Vehicle Age (Years)
-                                <input type="number" name="auto_age_years" id="vehicleAge" required>
                             </label>
                         </p>
 
