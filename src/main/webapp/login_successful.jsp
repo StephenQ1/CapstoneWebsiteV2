@@ -5,14 +5,24 @@
 <%@include file='head.jsp'%>
 <%@include file='header.jsp'%>
 
-<body id="wrapbot" class="backgroundImages" style="background-image: url('Photos/aboutBackground.jpg');">
-<div class="pageContent">
-    <div class="contentContainer">
-        <h1 align="center">Log-in Successful!</h1>
+<body id="wrapbot"class="backgroundImages" style="background-image: url('Photos/aboutBackground.jpg');">
+    <div class="pageContent">
+        <div class="contentContainer">
+            <div id="quoteForm">
+                <h1 align="center"id="loginMessage" style="display: block">Log-in Successful!</h1>
+                <p align="center"id="loginButton" style="display: block">
+                    E-mail Address: <%= request.getParameter("email")%><br>
+                    Password: <%= request.getParameter("password")%><br>
+
+<%--                    <button style="width: 170px; height: 50px"onclick="location.href ='login_show_quote.jsp'">Show Previous Policies</button></p>--%>
+                    <form method="post" enctype="application/x-www-form-urlencoded" action="quoteServlet">
+                        <input align="center" type="submit" value="JO TEST BUTTON" style="width: 150px;height: 50px;" id="jo">
+                    </form>
+                </p>
+
+            </div>
+        </div>
     </div>
-</div>
 </body>
-<div id="specialFooter">
 <%@include file='footer.jsp'%>
-</div>
 </html>
