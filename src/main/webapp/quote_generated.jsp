@@ -8,7 +8,6 @@
         <div class="contentContainer">
                 <div id="quoteResults">
                     <p align="center" id="quoteResultsbody">
-                        Query: <%= request.getParameter("query")%>
                         Name: <%= request.getParameter("customer_fName")%>
                         <%= request.getParameter("customer_LName")%><br>
                         Mobile Phone Number: <%= request.getParameter("phone_mobile")%><br>
