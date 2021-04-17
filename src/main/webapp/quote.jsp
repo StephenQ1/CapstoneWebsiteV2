@@ -54,18 +54,6 @@
                         </p>
 
                         <p>
-                            <label>Home Phone
-                                <input type="tel" name="phone_home">
-                            </label>
-                        </p>
-
-                        <p>
-                            <label>Work Phone
-                                <input type="tel" name="phone_work">
-                            </label>
-                        </p>
-
-                        <p>
                             <label>Mobile Phone
                                 <input type="tel" name="phone_mobile" required>
                             </label>
@@ -91,8 +79,8 @@
                                 </label>
                             </p>
                             <p>
-                                <label>State/Province
-                                    <input type="text" name="province" id="state_province" required>
+                                <label>State/Province (Initials)
+                                    <input maxlength="2" type="text" name="province" id="state_province" required>
                                 </label>
                             </p>
                             <p>
@@ -160,15 +148,21 @@
                                 </label>
                             </p>
                             <p>
-                                <label>Vehicle Color
-                                    <input type="text" name="auto_color" id="color">
+                                <label>Vehicle Year
+                                    <input type="number" min="1950" max="2022" name="auto_age_years" id="vehicleAge" required>
                                 </label>
                             </p>
                             <p>
-                                <label>Vehicle Age (Years)
-                                    <input type="number" name="auto_age_years" id="vehicleAge" required>
+                                <label>Vehicle Identification Number
+                                    <input type="text" name="auto_VIN" id="vin" required>
                                 </label>
                             </p>
+                            <p>
+                                <label>Vehicle Color
+                                    <input type="text" name="auto_color" id="color" required>
+                                </label>
+                            </p>
+
                         <p>
                             <label>Vehicle Value
                                 <input type="number" name="auto_value" id="vehicleValue" >

@@ -9,7 +9,7 @@
             <a href="services.jsp">Services</a>
             <a href="about.jsp">About Us</a>
             <a href="contact.jsp">Contact Us</a>
-            <a href="login.jsp">Login / Signup</a>
+            <a href="login.jsp">Login</a>
             <a href="quote.jsp">Get a Quote</a>
         </div>
     </div>
