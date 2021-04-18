@@ -23,15 +23,12 @@ import static java.lang.System.out;
 public class HelloServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
-
-
 //    public void init() {
 //        message = "SMJ Interactive!";
 //    }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
 
         String SQL_Stm_Client = "insert into SMJ_CLIENT values (?, ?, ?, ?, ?)";
         String SQL_Stm_Car = "insert into SMJ_CAR values (?, ?, ?, ?, ?, ?, ?)";
@@ -70,13 +67,11 @@ public class HelloServlet extends HttpServlet {
             Date date4=formatter4.parse(sDate4);
             Date issuedDate =formatter5.parse(sDate5);
             Date date6=formatter6.parse(sDate6);*/
-
             //---------------------------------------------------
 
             long millis = System.currentTimeMillis();
             java.sql.Date issuedDate = new java.sql.Date(millis); // Date object created
             //issuedDate
-
             String client_fName = request.getParameter("customer_fName"); // Came from the form
             String client_LName = request.getParameter("customer_LName");
             String client_MobileNumber = request.getParameter("phone_mobile");
@@ -97,7 +92,6 @@ public class HelloServlet extends HttpServlet {
             String property_PostalCode = request.getParameter("postal_code");
             String property_Heating = request.getParameter("heating_type");
             String property_Location = request.getParameter("location");
-
 
             double car_QuoteAmount = Double.parseDouble(request.getParameter("auto_accident_count"));
             double car_DrivingArea = 1.0;
@@ -236,7 +230,6 @@ public class HelloServlet extends HttpServlet {
             posted_5.executeUpdate();
             posted_6.executeUpdate();
             posted_7.executeUpdate();
-
 
             posted.close();
             posted_2.close();
