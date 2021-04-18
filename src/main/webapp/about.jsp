@@ -1,23 +1,41 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Owner
-  Date: 2021-03-22
-  Time: 3:34 p.m.
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
 <html>
-<head>
-    <div class="aboutNavBar">
-        <a href="index.jsp">Home</a>
-        <a href="services.jsp">Services</a>
-        <a href="about.jsp">About Us</a>
-        <a href="contact.jsp">Contact Us</a>
-        <a href="login.jsp">Login / Signup</a>
-        <a href="help.jsp">Help</a>
+<title>Taylor Insurance - About Us</title>
+<%@include file='head.jsp'%>
+<%@include file='header.jsp'%>
+<body id="wrapbot" class="backgroundImages" style="background-image: url('Photos/aboutBackground.jpg');">
+    <div class="pageContent">
+        <div class="contentContainer">
+            <h1>Meet the Team!</h1>
+            <div class="row">
+                <div id="joeProfile" class="column profileBlurb">
+                    <h1>Joseph Crane</h1>
+                    <h4>Manager; Software Developer</h4>
+                    <img src="Photos/member1.jpg" class="profilePhoto" alt="Joseph">
+                    <p class="profileBlurb">Jo is a multi-talented insurance and IT professional
+                        with a diverse background in a variety of fields related to delivering online
+                        solutions in both direct and electronic insurance industries.</p>
+                </div>
+                <div id="mohammadProfile" class="column profileBlurb">
+                    <h1>Mohammad F. Rad</h1>
+                    <h4>Insurance Agent; Software Developer</h4>
+                    <img src="Photos/member2.jpg" class="profilePhoto" alt="Mohammad">
+                    <p class="profileBlurb">Mohammad is an experienced insurance agent with a background in mobile
+                        the latest data management technologies and many years of successful customer service
+                        work under his belt, placing the utmost importance on satisfying your client needs.</p>
+                </div>
+                <div id="stephenProfile" class="column profileBlurb">
+                    <h1>Stephen Quigley</h1>
+                    <h4>Insurance Agent; Software Developer</h4>
+                    <img src="Photos/member3.jpg" class="profilePhoto" alt="Stephen">
+                    <p class="profileBlurb">Stephen is an enthusiastic IT Specialist who aims to make the
+                        client experience with Taylor Insurance as convenient and simple as possible for you,
+                        our valued customer.</p>
+                </div>
+            </div>
+        </div>
     </div>
-</head>
-<body>
-
 </body>
+<%@include file='footer.jsp'%>
 </html>

@@ -1,25 +1,33 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html>
-<head>
-    <title>JSP - Hello World</title>
-    <link rel="stylesheet" href="index.css"/>
-    <img src="headerBackground.jpg" alt="HeaderB" id="HeaderB" style="width:1350px;height:505px;">
-    <img src="PRLogo.jpg" alt="Logo" id="Logo" style="width:275px;height:275px;">
+<title>Taylor Insurance</title>
+<%@include file='head.jsp'%>
+<%@include file='header.jsp'%>
 
-    <h1><%= "SMJ Interactive" %></h1>
-    <div class="mainNavBar">
-        <a href="index.jsp">Home</a>
-        <a href="services.jsp">Services</a>
-        <a href="about.jsp">About Us</a>
-        <a href="contact.jsp">Contact Us</a>
-        <a href="login.jsp">Login / Signup</a>
-        <a href="help.jsp">Help</a>
+<body id="wrapbot" class="backgroundImages" style="background-image: url('Photos/bodyBackground.jpg'); ">
+
+<div class="pageContent">
+    <div class="contentContainer">
+        <h1> Let us innovate you!</h1>
+        <div id="homeBlurb">
+            <p>Taylor Insurance is an experienced insurance company
+                delivering a variety of coverage solutions using the latest technologies in the online realm,
+                specializing in automotive and property coverage since 2018.</p>
+            <p>Our mission is to provide customized insurance solutions that will give our clients the
+                most competitive rates and the simplest processes to access them.
+                Taylor Insurance is a highly skilled team dedicated
+                to giving our customers the best customer experience in the industry.</p>
+            <p>Our team is qualified in policy generation and management, as well as customer service and
+                up-to-date knowledge of our competitors. We employ use the latest and greatest modern, patented
+                tools available in our proprietary software to offer an affordable, customized, and
+                versatile experience that guarantees your satisfaction. You will more details about
+                our services and our areas of expertise on our services page.</p>
+        </div>
     </div>
-</head>
-<body>
-<br/>
-<img src="bodyBackground.jpg" alt="BodyB" id="BodyB"style="width:1350px;height:768px;">
-<p><h1 id="adBlurb">Delivering software solutions<br> and expertise <br>since 2018</h1></p>
+</div>
 </body>
+<%@include file='footer.jsp'%>
+<%--TODO: align footer with the bottom of the page using css--%>
+<%--TODO: add footer to this position (right before </html> on all pages--%>
 </html>

@@ -1,23 +1,77 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Owner
-  Date: 2021-03-22
-  Time: 3:34 p.m.
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8"%>
+<!DOCTYPE html>
 <html>
-<head>
-    <div class="loginNavBar">
-        <a href="index.jsp">Home</a>
-        <a href="services.jsp">Services</a>
-        <a href="about.jsp">About Us</a>
-        <a href="contact.jsp">Contact Us</a>
-        <a href="login.jsp">Login / Signup</a>
-        <a href="help.jsp">Help</a>
-    </div>
-</head>
-<body>
+<title>Taylor Insurance - Log-in</title>
+<%@include file='head.jsp'%>
+<%@include file='header.jsp'%>
 
+<body id="wrapbot" class="backgroundImages" style="background-image: url('Photos/aboutBackground.jpg');">
+<div class="pageContent">
+    <div class="contentContainer">
+        <div id="quoteForm">
+            <%--            <div id="loginForm">--%>
+            <form method="post" enctype="application/x-www-form-urlencoded" action="login_successful.jsp">
+                <h1> Login: </h1>
+                <p>
+                    <label>E-mail Address
+                        <input type="text" name="email" required>
+                    </label>
+                </p>
+
+                <p>
+                    <label>Password
+                        <input type="text" name="password" required>
+                    </label>
+                </p>
+
+                <p><input style="width: 133px; height: 25px" align="center" type="submit" value="Log In" /></p>
+            </form>
+        </div>
+    </div>
+</div>
 </body>
+<div id="specialFooter">
+    <%@include file='footer.jsp'%>
+</div>
 </html>
+
+
+
+
+
+<%--<%@ page contentType="text/html;charset=UTF-8"%>
+<!DOCTYPE html>
+<html>
+<title>Taylor Insurance - Log-in</title>
+<%@include file='head.jsp'%>
+<%@include file='header.jsp'%>
+
+<body id="wrapbot" class="backgroundImages" style="background-image: url('Photos/aboutBackground.jpg');">
+    <div class="pageContent">
+        <div class="contentContainer">
+            <div id="quoteForm">
+&lt;%&ndash;            <div id="loginForm">&ndash;%&gt;
+                <form method="post" enctype="application/x-www-form-urlencoded" action="login_successful.jsp">
+                    <h1> Login: </h1>
+                    <p>
+                        <label>E-mail Address
+                            <input type="text" name="email" required>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label>Password
+                            <input type="text" name="password" required>
+                        </label>
+                    </p>
+
+                    <p><input style="width: 133px; height: 25px" align="center" type="submit" value="Log In" /></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<div id="specialFooter">
+    <%@include file='footer.jsp'%>
+</div>
+</html>--%>
