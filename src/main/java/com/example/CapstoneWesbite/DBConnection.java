@@ -13,7 +13,7 @@ public class DBConnection {
 
             //Class.forName(dbDriver);
             Connection connection = DriverManager.getConnection(dbURL, dbUsername, dbPassword);
-            System.out.println("Successfully Connected!");
+            //System.out.println("Successfully Connected!");
             return connection;
 
         } catch (Exception e){
