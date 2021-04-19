@@ -1,38 +1,18 @@
 package com.example.CapstoneWesbite;
 
-import java.io.*;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-
-import jakarta.servlet.RequestDispatcher;
-import jakarta.servlet.ServletException;
+import java.util.concurrent.ThreadLocalRandom;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
-
-import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
-import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.util.Date;
-import java.util.concurrent.ThreadLocalRandom;
-
-import static java.lang.System.out;
 
 @WebServlet("/helloServlet")
 public class HelloServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) {
 
-
-//    public void init() {
-//        message = "SMJ Interactive!";
-//    }
-
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-
-
+        // NOTE: number of ? must match number of fields being posted for them to insert properly
         String SQL_Stm_Client = "insert into SMJ_CLIENT values (?, ?, ?, ?, ?)";
         String SQL_Stm_Car = "insert into SMJ_CAR values (?, ?, ?, ?, ?, ?, ?)";
         String SQL_Stm_Property = "insert into SMJ_PROPERTY values (?, ?, ?, ?, ?, ?, ?, ?, ? , ?)";
@@ -41,43 +21,21 @@ public class HelloServlet extends HttpServlet {
         String SQL_Stm_AutoPolicy = "insert into SMJ_AUTOPOLICY values (?, ?, ?, ?, ?, ?)";
         String SQL_Stm_PropertyPolicy = "insert into SMJ_PROPERTYPOLICY values (?, ?, ?, ?, ?, ?)";
 
-        // NOTE: number of ? must match number of fields being posted for them to insert properly
         try {
-            int client_id = ThreadLocalRandom.current().nextInt(1000, 10000 + 1);
-            int car_id = ThreadLocalRandom.current().nextInt(2000, 10000 + 1);
-            int property_id = ThreadLocalRandom.current().nextInt(3000, 10000 + 1);
-            int car_quote_Number = ThreadLocalRandom.current().nextInt(4000, 10000 + 1);
-            int property_quote_Number = ThreadLocalRandom.current().nextInt(5000, 10000 + 1);
-            int auto_policy_Number = ThreadLocalRandom.current().nextInt(6000, 10000 + 1);
-            int property_policy_Number = ThreadLocalRandom.current().nextInt(7000, 10000 + 1);
 
-            //---------- DATE -----------------------------------
-/*            String sDate1="31/12/1998";
-            String sDate2 = "31-Dec-1998";
-            String sDate3 = "12 31, 1998";
-            String sDate4 = "Thu, Dec 31 1998";
-            String sDate5 = "Thu, Dec 31 1998 23:37:50";
-            String sDate6 = "31-Dec-1998 23:37:50";
-            SimpleDateFormat formatter1=new SimpleDateFormat("dd/MM/yyyy");
-            SimpleDateFormat formatter2=new SimpleDateFormat("dd-MMM-yyyy");
-            SimpleDateFormat formatter3=new SimpleDateFormat("MM dd, yyyy");
-            SimpleDateFormat formatter4=new SimpleDateFormat("E, MMM dd yyyy");
-            SimpleDateFormat formatter5=new SimpleDateFormat("E, MMM dd yyyy HH:mm:ss");
-            SimpleDateFormat formatter6=new SimpleDateFormat("dd-MMM-yyyy HH:mm:ss");
-            Date issuedDate =formatter1.parse(sDate1);
-            Date date2=formatter2.parse(sDate2);
-            Date date3=formatter3.parse(sDate3);
-            Date date4=formatter4.parse(sDate4);
-            Date issuedDate =formatter5.parse(sDate5);
-            Date date6=formatter6.parse(sDate6);*/
-
-            //---------------------------------------------------
+            int client_id = ThreadLocalRandom.current().nextInt(1, 1000000);
+            int car_id = ThreadLocalRandom.current().nextInt(1, 1000000);
+            int property_id = ThreadLocalRandom.current().nextInt(1, 1000000);
+            int car_quote_number = ThreadLocalRandom.current().nextInt(1, 1000000);
+            int property_quote_Number = ThreadLocalRandom.current().nextInt(1, 1000000);
+            int auto_policy_Number = ThreadLocalRandom.current().nextInt(1, 1000000);
+            int property_policy_Number = ThreadLocalRandom.current().nextInt(1, 1000000);
 
             long millis = System.currentTimeMillis();
-            java.sql.Date issuedDate = new java.sql.Date(millis); // Date object created
-            //issuedDate
+            java.sql.Date issuedDate = new java.sql.Date(millis);
 
-            String client_fName = request.getParameter("customer_fName"); // Came from the form
+            //issuedDate
+            String client_fName = request.getParameter("customer_fName");
             String client_LName = request.getParameter("customer_LName");
             String client_MobileNumber = request.getParameter("phone_mobile");
             String client_email = request.getParameter("email_address");
@@ -98,12 +56,8 @@ public class HelloServlet extends HttpServlet {
             String property_Heating = request.getParameter("heating_type");
             String property_Location = request.getParameter("location");
 
-
             double car_QuoteAmount = Double.parseDouble(request.getParameter("auto_accident_count"));
-            double car_DrivingArea = 1.0;
             double property_QuoteAmount = Double.parseDouble(request.getParameter("comments"));
-
-            //TODO: Get these values from the premium calculation results
 
             // THE CUSTOMER ACCEPTED THE QUOTE AMOUNT, SO QUOTE AMOUNT IS EQUAL TO PREMIUM VALUE!
             double car_PremiumValue = car_QuoteAmount;
@@ -111,6 +65,7 @@ public class HelloServlet extends HttpServlet {
 
             String quoteType = "Regular";
 
+            // Disabled POJO implementation
             /*Client client = new Client(client_fName, client_LName, client_MobileNumber, LocalDate.now());
             Car car = new Car(client, car_VIN, car_Make, car_Year, car_QuoteAmount);
             Property property = new Property(client, property_Type, property_StreetNumber
@@ -158,7 +113,7 @@ public class HelloServlet extends HttpServlet {
             posted_3.setString(9, property_Heating);
             posted_3.setString(10, property_Location);
 
-            posted_4.setInt(1, car_quote_Number);
+            posted_4.setInt(1, car_quote_number);
             posted_4.setInt(2, car_id);
             posted_4.setDouble(3, car_QuoteAmount);
             posted_4.setDate(4, issuedDate);
@@ -172,7 +127,7 @@ public class HelloServlet extends HttpServlet {
             posted_5.setDate(6, issuedDate);
 
             posted_6.setInt(1, auto_policy_Number);
-            posted_6.setInt(2, car_quote_Number);
+            posted_6.setInt(2, car_quote_number);
             posted_6.setDouble(3, car_PremiumValue);
             posted_6.setDate(4, issuedDate);
             posted_6.setDate(5, issuedDate);
@@ -237,7 +192,6 @@ public class HelloServlet extends HttpServlet {
             posted_6.executeUpdate();
             posted_7.executeUpdate();
 
-
             posted.close();
             posted_2.close();
             posted_3.close();
@@ -248,7 +202,7 @@ public class HelloServlet extends HttpServlet {
 
             connection.close();
 
-            PrintWriter out = response.getWriter();
+            //PrintWriter out = response.getWriter();
 //            out.println("<html><body>" +
 //                    "<b>Successfully Inserted into the table!" +
 //                    "</b></body></html>");
