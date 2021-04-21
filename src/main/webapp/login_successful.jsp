@@ -10,10 +10,10 @@
 <body id="wrapbot" class="backgroundImages" style="background-image: url('Photos/aboutBackground.jpg');">
 <div class="pageContent">
     <div class="contentContainer">
-        <div id="quoteForm">
+        <div id="loginForm" style="text-align: center ">
             <h1 align="center" id="loginMessage" style="display: block">Log-in Successful!</h1>
-            <p align="center" id="loginButton" style="display: block">
-                E-mail Address: <%= request.getParameter("email")%><br>
+            <p align="center" id="loginButton" style="display: block;">
+                E-mail Address: <%= request.getParameter("email")%><br></p>
                 <%--Password: <%= request.getParameter("password")%><br>--%>
 
                     <%
@@ -24,9 +24,9 @@
                 <%--<button style="width: 170px; height: 50px" onclick="location.href ='login_show_quote.jsp'">Show Previous Policies</button></p>--%>
                 <%--<button style="width: 170px; height: 50px" onclick="location.href ='login_show_quote.jsp'">Show Previous Policies</button></p>--%>
 
-            <form method="post" enctype="application/x-www-form-urlencoded" action="quoteServlet" >
+            <form style="padding-top: 30px" method="post" enctype="application/x-www-form-urlencoded" action="quoteServlet" >
 
-                <p><input style="width: 133px; height: 25px"align="center" type="submit"value="Quote" /></p>
+                <p><input style="font-weight: bold; width: 133px; height: 50px" type="submit"value="Quote" /></p>
 
             </form>
 

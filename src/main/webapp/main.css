@@ -178,22 +178,22 @@
     float: right;
 }
 
-/*#loginForm{*/
-/*    margin: auto;*/
-/*    margin-bottom: 2em;*/
-/*    background-color:#181A1B;*/
-/*    border:solid;*/
-/*    border-color:white;*/
-/*    border-width:1px;*/
-/*    color:white;*/
-/*    font-family:\"Times New Roman\";*/
-/*    padding:30px;*/
-/*    padding-bottom: 5em;*/
-/*    width:500px;*/
-/*    border-radius: 25px;*/
-/*    align-content: space-evenly;*/
-/*    align-items: start;*/
-/*}*/
+#loginForm{
+    margin: auto;
+    margin-bottom: 2em;
+    background-color:#181A1B;
+    border:solid;
+    border-color:white;
+    border-width:1px;
+    color:white;
+    font-family:\"Times New Roman\";
+    padding:30px;
+    padding-bottom: 5em;
+    width:500px;
+    border-radius: 25px;
+    align-content: space-evenly;
+    align-items: start;
+}
 
 /*#loginForm input{*/
 /*    margin-top: 1.5em;*/

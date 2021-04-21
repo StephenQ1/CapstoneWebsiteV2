@@ -96,40 +96,74 @@ public class QuoteServlet extends HttpServlet{
 
             String clientFinalPolicy =
                     "<style>\n" +
-                            " .topHeading {text-align: center;\n" +
-                            "}\n" +
-
+                            " .topHeading {text-align: center;}" +
+                            " .premium {font-size:1.2em;}" +
                             "</style>" +
                             "<div>" +
-                            "<p class=\"topHeading\"> ------------------ Auto Policy --------------------- </p>\n" +
-                            "<p>\t Date: &emsp; &ensp; &emsp; &ensp;" + dateTrimmer(getQuery(SQL_issuedDate)) + "</p>"+
-                            "<p>\t Valid Until: &emsp; &ensp; &emsp; &ensp;" + dateTrimmer(getQuery(SQL_autoPolicyExpireDate)) + "</p>"+
+                            "<p class=\"topHeading\" style=\"font-size:1.6em\"> ------------------- Auto Policy ---------------------- </p>\n" +
+                            "<p>\t Date: &emsp; &ensp; &emsp; &ensp; &emsp; &ensp;" + dateTrimmer(getQuery(SQL_issuedDate)) + "</p>"+
+                            "<p>\t Valid Until: &emsp; &ensp; &emsp;" + dateTrimmer(getQuery(SQL_autoPolicyExpireDate)) + "</p>"+
                             "<p>\t Policy Number: &emsp; &ensp;" +  SQL_autoPolicyNumber + "</p><br>"+
                             /*"<p>\tClient Name: &nbsp;&nbsp;&nbsp;&nbsp;" + getQuery(SQL_fname) + " " + getQuery(SQL_lname) + "</p>\n" +*/
-                            "<p>\tClient Name: &emsp; &ensp; &emsp; &ensp;" + getQuery(SQL_fname) + " " + getQuery(SQL_lname) + "</p>\n" +
+                            "<p>\tClient Name: &emsp; &ensp; &emsp; &ensp; &ensp; &emsp; &ensp; &emsp; &ensp; &emsp; &ensp;" + getQuery(SQL_fname) + " " + getQuery(SQL_lname) + "</p>\n" +
 
-                            "<p>\tClient Phone Number: &emsp; &ensp; &emsp; &ensp;" + getQuery(SQL_phone).toString() + "</p>\n" +
-                            "<p>\tClient E-mail: &emsp; &ensp; &emsp; &ensp; &emsp; &ensp;" + getQuery(SQL_email) + "</p>\n" +
-                            "<p>\tClient Vehicle Make: &emsp; &ensp; &emsp; &ensp;" + getQuery(SQL_carMake) + "</p>\n" +
-                            "<p>\tClient Vehicle Model: &emsp; &ensp; &emsp; &ensp;" + getQuery(SQL_carModel) + "</p>\n" +
-                            "<p>\tClient Vehicle Year: &emsp; &ensp; &emsp; &ensp; &emsp; &emsp; " + getQuery(SQL_carYear) + "</p>\n" +
-                            "<p>\tClient Vehicle Color: &emsp; &ensp; &emsp; &ensp;" + getQuery(SQL_carColor) + "</p>\n" + "<br>\n"+
+                            "<p>\tClient Phone Number: &emsp; &ensp; &emsp; &emsp; &ensp; &emsp; &ensp;" + getQuery(SQL_phone).toString() + "</p>\n" +
+                            "<p>\tClient E-mail: &emsp; &ensp; &emsp; &ensp; &emsp; &ensp; &ensp; &emsp; &ensp; &emsp; &ensp;" + getQuery(SQL_email) + "</p>\n" +
+                            "<p>\tClient Vehicle Make: &emsp; &ensp; &emsp; &ensp; &emsp; &ensp; &emsp; &ensp;" + getQuery(SQL_carMake) + "</p>\n" +
+                            "<p>\tClient Vehicle Model: &ensp; &emsp; &ensp; &emsp; &ensp; &emsp; &ensp; &emsp;" + getQuery(SQL_carModel) + "</p>\n" +
+                            "<p>\tClient Vehicle Year: &emsp; &ensp; &emsp; &ensp; &ensp;&emsp; &ensp; &emsp; &ensp;" + getQuery(SQL_carYear) + "</p>\n" +
+                            "<p>\tClient Vehicle Color: &emsp; &ensp; &emsp; &ensp; &emsp; &ensp; &emsp; &ensp;" + getQuery(SQL_carColor) + "</p>\n"+
                             "<p> ========================================</p>\n" +
-                            "<p>\tPremium Amount:&emsp; &ensp; &emsp; &ensp;$" + getQuery(SQL_autoPolicyPremiumValue) + " / year </p><br><hr>\n" +
-                            "<p class=\"topHeading\" > ------------------ Property Policy --------------------- </p\n>" +
-                            "<p>\t Date: &emsp; &ensp; &emsp; &ensp;" + dateTrimmer(getQuery(SQL_issuedDate)) + "</p>"+
-                            "<p>\t Valid Until: &emsp; &ensp; &emsp; &ensp;" + dateTrimmer(getQuery(SQL_autoPolicyExpireDate)) + "</p>"+
-                            "<p>\t Policy Number: &emsp; &ensp;" +  SQL_propertyPolicyNumber + "</p><br>"+
-                            "<p>\tProperty Address:&emsp; " + getQuery(SQL_property_address)+ ",&emsp;" + getQuery(SQL_property_city) + "&emsp;"
+                            "<p class=\"premium\">\tPremium Amount:&emsp; &ensp; &emsp; &ensp;$" + getQuery(SQL_autoPolicyPremiumValue) + " / year </p><br><br>\n" +
+                            "<p class=\"topHeading\" style=\"font-size:1.6em\"> ------------------ Property Policy ------------------- </p\n>" +
+                            "<p>\t Date: &emsp; &ensp; &emsp; &ensp; &emsp; &ensp; &emsp; &ensp; &emsp; &ensp;" + dateTrimmer(getQuery(SQL_issuedDate)) + "</p>"+
+                            "<p>\t Valid Until: &emsp; &ensp; &emsp; &ensp; &emsp; &ensp; &emsp; &ensp;" + dateTrimmer(getQuery(SQL_autoPolicyExpireDate)) + "</p>"+
+                            "<p>\t Policy Number: &emsp; &ensp; &emsp; &ensp; &emsp; &ensp;" +  SQL_propertyPolicyNumber + "</p><br>"+
+                            "<p>\tProperty Address:&emsp; <br>" + getQuery(SQL_property_address)+ ",&emsp;" + getQuery(SQL_property_city) + "&emsp;"
                             + getQuery(SQL_property_province) + ".&emsp;" + getQuery(SQL_property_country) +
                             " &emsp;" + getQuery(SQL_property_postalcode) +"</p>" +
-                            "<br>\n" +
-                            "<p>\tProperty Location:&emsp; &ensp;&emsp; &ensp;" + getQuery(SQL_property_location) + "</p>" +
-                            "<p>\tType of Dwelling:&emsp; &ensp;&emsp; &ensp;" + getQuery(SQL_property_dweType) + "</p>" +
-                            "<p>\tType of Heating:&emsp; &ensp;&emsp; &ensp;" +getQuery(SQL_property_heatingType) +"</p><br>\n" +
+                            "<p>\tProperty Location:&emsp; &ensp;&emsp; &ensp; &emsp; &ensp; &emsp; &ensp;" + getQuery(SQL_property_location) + "</p>" +
+                            "<p>\tType of Dwelling:&emsp; &ensp;&emsp; &ensp; &emsp; &ensp; &emsp; &ensp;" + getQuery(SQL_property_dweType) + "</p>" +
+                            "<p>\tType of Heating:&emsp; &ensp;&emsp; &emsp; &emsp; &ensp; &emsp; &ensp;" +getQuery(SQL_property_heatingType) +"</p>\n" +
                             "<p>========================================</p>\n" +
-                            "<p>Premium Amount:&emsp; &ensp;$" + getQuery(SQL_propertyPremiumValue) + " / year</p>\n" +
+                            "<p class=\"premium\"> Premium Amount:&emsp; &ensp;$" + getQuery(SQL_propertyPremiumValue) + " / year</p>\n" +
                             "</div>";
+//            String clientFinalPolicy =
+//                    "<style>\n" +
+//                            " .topHeading {text-align: center;\n" +
+//                            "}\n" +
+//
+//                            "</style>" +
+//                            "<div>" +
+//                            "<p class=\"topHeading\"> ------------------ Auto Policy --------------------- </p>\n" +
+//                            "<p>\t Date: &emsp; &ensp; &emsp; &ensp;" + dateTrimmer(getQuery(SQL_issuedDate)) + "</p>"+
+//                            "<p>\t Valid Until: &emsp; &ensp; &emsp; &ensp;" + dateTrimmer(getQuery(SQL_autoPolicyExpireDate)) + "</p>"+
+//                            "<p>\t Policy Number: &emsp; &ensp;" +  SQL_autoPolicyNumber + "</p><br>"+
+//                            /*"<p>\tClient Name: &nbsp;&nbsp;&nbsp;&nbsp;" + getQuery(SQL_fname) + " " + getQuery(SQL_lname) + "</p>\n" +*/
+//                            "<p>\tClient Name: &emsp; &ensp; &emsp; &ensp;" + getQuery(SQL_fname) + " " + getQuery(SQL_lname) + "</p>\n" +
+//
+//                            "<p>\tClient Phone Number: &emsp; &ensp; &emsp; &ensp;" + getQuery(SQL_phone).toString() + "</p>\n" +
+//                            "<p>\tClient E-mail: &emsp; &ensp; &emsp; &ensp; &emsp; &ensp;" + getQuery(SQL_email) + "</p>\n" +
+//                            "<p>\tClient Vehicle Make: &emsp; &ensp; &emsp; &ensp;" + getQuery(SQL_carMake) + "</p>\n" +
+//                            "<p>\tClient Vehicle Model: &emsp; &ensp; &emsp; &ensp;" + getQuery(SQL_carModel) + "</p>\n" +
+//                            "<p>\tClient Vehicle Year: &emsp; &ensp; &emsp; &ensp; &emsp; &emsp; " + getQuery(SQL_carYear) + "</p>\n" +
+//                            "<p>\tClient Vehicle Color: &emsp; &ensp; &emsp; &ensp;" + getQuery(SQL_carColor) + "</p>\n" + "<br>\n"+
+//                            "<p> ========================================</p>\n" +
+//                            "<p>\tPremium Amount:&emsp; &ensp; &emsp; &ensp;$" + getQuery(SQL_autoPolicyPremiumValue) + " / year </p><br><hr>\n" +
+//                            "<p class=\"topHeading\" > ------------------ Property Policy --------------------- </p\n>" +
+//                            "<p>\t Date: &emsp; &ensp; &emsp; &ensp;" + dateTrimmer(getQuery(SQL_issuedDate)) + "</p>"+
+//                            "<p>\t Valid Until: &emsp; &ensp; &emsp; &ensp;" + dateTrimmer(getQuery(SQL_autoPolicyExpireDate)) + "</p>"+
+//                            "<p>\t Policy Number: &emsp; &ensp;" +  SQL_propertyPolicyNumber + "</p><br>"+
+//                            "<p>\tProperty Address:&emsp; " + getQuery(SQL_property_address)+ ",&emsp;" + getQuery(SQL_property_city) + "&emsp;"
+//                            + getQuery(SQL_property_province) + ".&emsp;" + getQuery(SQL_property_country) +
+//                            " &emsp;" + getQuery(SQL_property_postalcode) +"</p>" +
+//                            "<br>\n" +
+//                            "<p>\tProperty Location:&emsp; &ensp;&emsp; &ensp;" + getQuery(SQL_property_location) + "</p>" +
+//                            "<p>\tType of Dwelling:&emsp; &ensp;&emsp; &ensp;" + getQuery(SQL_property_dweType) + "</p>" +
+//                            "<p>\tType of Heating:&emsp; &ensp;&emsp; &ensp;" +getQuery(SQL_property_heatingType) +"</p><br>\n" +
+//                            "<p>========================================</p>\n" +
+//                            "<p>Premium Amount:&emsp; &ensp;$" + getQuery(SQL_propertyPremiumValue) + " / year</p>\n" +
+//                            "</div>";
 
 
 
